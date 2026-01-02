@@ -1,0 +1,32 @@
+---
+title: "Publications"
+page-layout: article
+toc: false
+---
+
+"Housing supply in the presence of informality", joint with Ricardo Guedes and Marcelo Sant'Anna.  
+*Regional Science and Urban Economics*, 99 (2023), 103875. ([pdf](papers/Housing_Supply_in_the_Presence_of_Informality.pdf), [journal](https://doi.org/10.1016/j.regsciurbeco.2023.103875))
+
+"Underdiversification and idiosyncratic risk externalities", joint with Dejanir Silva and Chao Zi.  
+*Journal of Financial Economics*, 143(3) (2022), 1227-1250. ([pdf](papers/IdRiskExternalities.pdf), [journal](https://doi.org/10.1016/j.jfineco.2021.05.001))
+
+"Information quality and regime change: Evidence from the lab", joint with Leif Helland, Ragnar Juelsrud, and Plamen T. Nenov.  
+*Journal of Economic Behavior and Organization*, 191 (2021), 538-554. ([pdf](papers/globalgamesexperiments.pdf), [journal](https://doi.org/10.1016/j.jebo.2021.08.036))
+
+"The choice channel of financial innovation", joint with Plamen Nenov and Alp Simsek.  
+*American Economic Journal: Macroeconomics*, 13(2) (2021), 333-72. ([pdf](papers/financialInnovationSaving_AEJ_unformatted_SciWord.pdf), [journal](https://doi.org/10.1257/mac.20180429))
+
+"Labor earnings dynamics in a developing economy with a large informal sector", joint with Diego Gomes and Cézar Santos.  
+*Journal of Economic Dynamics and Control*, 113 (2020), 103854. ([pdf](papers/EarningsInformality.pdf), [journal](https://doi.org/10.1016/j.jedc.2020.103854))
+
+"Competitive real options under private information", joint with Leandro Gorno.  
+*Journal of Economic Theory*, 185 (2020), 104945. ([pdf](papers/CompRealOptions.pdf), [journal](https://doi.org/10.1016/j.jet.2019.104945))
+
+"Capital budgeting and risk taking under credit constraints".  
+*Management Science*, 66(9) (2020), 4292-4314. ([pdf](papers/CapBudCredConst.pdf), [journal](https://doi.org/10.1287/mnsc.2019.3369))
+
+"Homicides and the age of criminal responsibility in Brazil: a regression discontinuity approach", joint with F. Costa, J. Faria, and B. Caballero.  
+*Economía, the Journal of LACEA*, 19(1) (2018), 59-92. ([pdf](papers/CCFI_2018Mar_final.pdf), [journal](https://doi.org/10.1353/eco.2018.0008))
+
+"Information quality and crises in regime-change games", joint with Plamen Nenov.  
+*Journal of Economic Theory*, 158 (2015), 739-768. ([pdf](papers/InfoQualRegChang.pdf), [journal](https://doi.org/10.1016/j.jet.2014.03.005))

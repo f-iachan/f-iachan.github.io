@@ -1,0 +1,45 @@
+---
+title: "Minimum Wages, Inequality, and the Informal Sector"
+author: 
+  - name: Rafael Machado Parente
+    affiliation: International Monetary Fund
+  - name: Luiz Brotherhood
+    affiliation: Universitat de Barcelona
+  - name: Felipe S. Iachan
+    affiliation: FGV EPGE
+date: "2025"
+abstract: |
+  How do minimum wages affect earnings inequality in countries with large informal sectors? We provide reduced-form evidence that the 2000s minimum wage hike in Brazil raised overall inequality by increasing inequality within the informal sector. We develop a model where heterogeneous firms select into informality to investigate when and how raising the minimum wage can increase inequality. We calibrate the model to Brazil and find that, by generating substantial informality, the increase in the minimum wage raised overall inequality by 4.1%. These results highlight how movements into and out of the informal sector modulate the effects of formal labor legislation.
+
+# Google Scholar metadata - CRITICAL for indexing
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta name="citation_title" content="Minimum Wages, Inequality, and the Informal Sector">
+        <meta name="citation_author" content="Parente, Rafael Machado">
+        <meta name="citation_author" content="Brotherhood, Luiz">
+        <meta name="citation_author" content="Iachan, Felipe S.">
+        <meta name="citation_publication_date" content="2025">
+        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/working_papers/Minw_Ineq_Inf.pdf">
+
+page-layout: article
+toc: false
+---
+
+## Abstract
+
+How do minimum wages affect earnings inequality in countries with large informal sectors? We provide reduced-form evidence that the 2000s minimum wage hike in Brazil raised overall inequality by increasing inequality within the informal sector. We develop a model where heterogeneous firms select into informality to investigate when and how raising the minimum wage can increase inequality. We calibrate the model to Brazil and find that, by generating substantial informality, the increase in the minimum wage raised overall inequality by 4.1%. These results highlight how movements into and out of the informal sector modulate the effects of formal labor legislation.
+
+[Download PDF](../working_papers/Minw_Ineq_Inf.pdf){.btn-download}
+
+## Status
+
+**Revised and Resubmitted**, *American Economic Review*
+
+## Authors
+
+- **Rafael Machado Parente** (International Monetary Fund)
+- **Luiz Brotherhood** (Universitat de Barcelona)
+- **Felipe S. Iachan** (FGV EPGE)
+

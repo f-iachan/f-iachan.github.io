@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!AGENTS.md"
+    - "!PROGRESS.md"
+    - "!TODO.md"
+    - "!TASK_COMPLETED.md"
+    - "!WORKING_PAPER_INSTRUCTIONS.md"
+    - "!AGENT_QUICK_START.md"
+    - "!DEPLOYMENT.md"
+    - "!README.md"
+
+website:
+  title: "Felipe S. Iachan"
+  description: "Associate Professor of Economics, FGV EPGE"
+  favicon: assets/favicon.svg
+  
+  navbar:
+    background: light
+    foreground: dark
+    right:
+      - href: index.qmd
+        text: Home
+      - href: publications.qmd
+        text: Publications
+      - href: working-papers.qmd
+        text: Working Papers
+      - href: cv.qmd
+        text: CV
+      - href: links.qmd
+        text: Contact
+  
+  page-footer:
+    left: "© 2026 Felipe S. Iachan"
+    right: 
+      - text: "FGV EPGE"
+        href: https://epge.fgv.br
+
+  # For Google Scholar indexing
+  site-url: https://felipeiachan.github.io
+  
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    css: styles.css
+    toc: false
+    link-external-newwindow: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">

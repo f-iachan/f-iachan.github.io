@@ -1,0 +1,28 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Temporary files
+*.tmp
+*.temp
+
+**/*.quarto_ipynb

@@ -1,0 +1,56 @@
+---
+title: "TEMPLATE: Working Paper Landing Page"
+---
+
+# ⚠️ This is an OLD template
+
+**For current instructions, see:**
+- Full guide: `/WORKING_PAPER_INSTRUCTIONS.md`
+- Quick start: `/AGENT_QUICK_START.md`
+
+**Current working examples:**
+- `/papers/minwage-inequality.qmd`
+- `/papers/ibes-market-returns.qmd`
+- `/papers/monetary-policy-heterogeneity.qmd`
+
+---
+
+## Legacy Template (kept for reference)
+
+```yaml
+---
+title: "PAPER TITLE"
+author: 
+  - name: AUTHOR NAME
+    affiliation: INSTITUTION
+date: "YYYY"
+abstract: |
+  ABSTRACT TEXT
+
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta name="citation_title" content="PAPER TITLE">
+        <meta name="citation_author" content="LASTNAME, FIRSTNAME">
+        <meta name="citation_publication_date" content="YYYY">
+        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/working_papers/FILE.pdf">
+
+page-layout: article
+toc: false
+---
+
+## Abstract
+
+ABSTRACT TEXT
+
+[Download PDF](../working_papers/FILE.pdf){.btn-download}
+
+## Status
+
+**STATUS**, *Journal*
+
+## Authors
+
+- **AUTHOR NAME** (Institution)
+```

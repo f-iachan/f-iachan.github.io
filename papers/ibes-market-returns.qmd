@@ -1,0 +1,41 @@
+---
+title: "Subjective Beliefs, Disagreement, and Market Return Predictability"
+author: 
+  - name: Felipe S. Iachan
+    affiliation: FGV EPGE
+  - name: Raul Riva
+    affiliation: Northwestern University
+date: "2024"
+abstract: |
+  We jointly evaluate the ability of consensus beliefs about long-term earnings growth and analyst disagreement to predict stock market returns. We bridge the gap between the strands of literature testing theories of belief extrapolation and disagreement-fueled over-pricing. Using I/B/E/S analyst forecast data from 1981 up to 2022 and conducting both in-sample and out-of-sample analyses, we find limited evidence that these measures of subjective beliefs predict returns. Our analyses across specifications and sample periods highlight the fragility of prior findings to the inclusion of relevant controls or the extension of sample periods.
+
+# Google Scholar metadata - CRITICAL for indexing
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta name="citation_title" content="Subjective Beliefs, Disagreement, and Market Return Predictability">
+        <meta name="citation_author" content="Iachan, Felipe S.">
+        <meta name="citation_author" content="Riva, Raul">
+        <meta name="citation_publication_date" content="2024">
+        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/working_papers/IBES_and_Market_Returns.pdf">
+
+page-layout: article
+toc: false
+---
+
+## Abstract
+
+We jointly evaluate the ability of consensus beliefs about long-term earnings growth and analyst disagreement to predict stock market returns. We bridge the gap between the strands of literature testing theories of belief extrapolation and disagreement-fueled over-pricing. Using I/B/E/S analyst forecast data from 1981 up to 2022 and conducting both in-sample and out-of-sample analyses, we find limited evidence that these measures of subjective beliefs predict returns. Our analyses across specifications and sample periods highlight the fragility of prior findings to the inclusion of relevant controls or the extension of sample periods.
+
+[Download PDF](../working_papers/IBES_and_Market_Returns.pdf){.btn-download}
+
+## Status
+
+**Revision Requested**, *Critical Finance Review*
+
+## Authors
+
+- **Felipe S. Iachan** (FGV EPGE)
+- **Raul Riva** (Northwestern University)
+

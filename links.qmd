@@ -1,0 +1,38 @@
+---
+title: "Contact"
+page-layout: article
+toc: false
+---
+
+**Email:** <felipe.iachan@fgv.br>
+
+**Address:**  
+FGV EPGE — Escola Brasileira de Economia e Finanças  
+Praia de Botafogo, 190/1115  
+Rio de Janeiro, RJ, Brazil 22250-900
+
+## Academic Profiles
+
+::: {.profile-links-icons}
+<a href="https://scholar.google.com/citations?user=V2-MEC0AAAAJ" target="_blank" class="profile-icon" title="Google Scholar">
+  <i class="ai ai-google-scholar ai-3x"></i>
+  <span>Google Scholar</span>
+</a>
+
+<a href="https://orcid.org/0000-0002-4716-2221" target="_blank" class="profile-icon" title="ORCID">
+  <i class="ai ai-orcid ai-3x"></i>
+  <span>ORCID</span>
+</a>
+
+<a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4233378D2" target="_blank" class="profile-icon" title="Lattes CV">
+  <i class="bi bi-file-earmark-person ai-3x"></i>
+  <span>Lattes CV</span>
+</a>
+
+<a href="https://ideas.repec.org/e/pia34.html" target="_blank" class="profile-icon" title="RePEc/IDEAS">
+  <i class="ai ai-ideas-repec ai-3x"></i>
+  <span>RePEc</span>
+</a>
+:::
+
+

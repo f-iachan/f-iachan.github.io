@@ -1,0 +1,253 @@
+---
+title: "Curriculum Vitae"
+page-layout: article
+toc: true
+toc-title: "Sections"
+---
+
+::: {.cv-header}
+**Felipe S. Iachan**  
+Associate Professor of Economics and Finance  
+FGV EPGE | <felipe.iachan@fgv.br> | [Links & Profiles](links.qmd)
+
+[Download PDF version](cv-pdf.pdf){.btn-download}
+
+_Last updated: January 2026._
+::::
+
+## Academic Positions
+
+::: {.cv-entry}
+::: {.year}
+2020–
+:::
+
+::: {}
+Associate Professor of Economics and Finance, FGV EPGE
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2012–2020
+:::
+
+::: {}
+Assistant Professor of Economics, FGV EPGE  
+*Short-term visiting positions:* FRB of Minneapolis, Princeton University, Einaudi Institute, MIT, Banco de Portugal
+:::
+:::
+
+## Education
+
+::: {.cv-entry}
+::: {.year}
+2012
+:::
+
+::: {}
+**Massachusetts Institute of Technology**, Cambridge, MA, USA  
+*Doctor of Philosophy in Economics*  
+Dissertation: "Essays in Macroeconomics: Liquidity and Taxation"  
+Committee: Abhijit V. Banerjee, Robert M. Townsend, Iván Werning
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2007
+:::
+
+::: {}
+**Fundação Getulio Vargas**, Rio de Janeiro, Brazil  
+*Master's Degree in Economics*
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2005
+:::
+
+::: {}
+**Fundação Getulio Vargas**, Rio de Janeiro, Brazil  
+*Bachelor's Degree in Economics*
+:::
+:::
+
+## Research Interests
+
+Macroeconomics, Financial Economics
+
+## Publications
+
+::: {.cv-publications}
+
+"Housing supply in the presence of informality"  
+with Ricardo Guedes and Marcelo Sant'Anna  
+*Regional Science and Urban Economics*, 99 (2023), 103875.
+
+"Underdiversification and idiosyncratic risk externalities"  
+with Dejanir Silva and Chao Zi  
+*Journal of Financial Economics*, 143.3 (2022), 1227-1250.
+
+"Information quality and regime change: Evidence from the lab"  
+with Leif Helland, Ragnar Juelsrud, Plamen T. Nenov  
+*Journal of Economic Behavior and Organization*, 191 (2021), 538-554.
+
+"The choice channel of financial innovation"  
+with Plamen Nenov and Alp Simsek  
+*American Economic Journal: Macroeconomics*, 13.2 (2021), 333-72.
+
+"Earning dynamics with a large informal sector"  
+with Diego Gomes and Cezar Santos  
+*Journal of Economic Dynamics and Control*, 113 (2020), 103854.
+
+"Competitive real options under private information"  
+with Leandro Gorno  
+*Journal of Economic Theory*, 185 (2020), 104945.
+
+"Capital budgeting and risk taking under credit constraints"  
+*Management Science*, 66.9 (2020), 3799-4358.
+
+"Homicides and the age of criminal responsibility in Brazil: a regression discontinuity approach"  
+with F. Costa, J. Faria, and B. Caballero  
+*Economía, the Journal of LACEA*, 19.1 (2018), 59-92.
+
+"Information quality and crises in regime-change games"  
+with Plamen Nenov  
+*Journal of Economic Theory*, 158 (2015), 739-768.
+
+:::
+
+## Honors, Awards, and Grants
+
+::: {.cv-entry}
+::: {.year}
+2022
+:::
+
+::: {}
+Haralambos Simeonidis Prize (ANPEC), Honorable Mention
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2021
+:::
+
+::: {}
+Haralambos Simeonidis Prize (ANPEC), Honorable Mention  
+FAPERJ APQ1 grant
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2019–2024
+:::
+
+::: {}
+CAPES PrInt grant (CAPES-PRINT), Principal Investigator
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2019
+:::
+
+::: {}
+SBE Meeting – Best Paper in Finance Award  
+Visiting Fellow, Banco de Portugal
+:::
+:::
+
+
+::: {.cv-entry}
+::: {.year}
+2016
+:::
+
+::: {}
+SBE Meeting – Best Paper in Finance Award  
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2016–2019
+:::
+
+::: {}
+CNPq Universal grant (Edital Universal), Principal Investigator
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2013
+:::
+
+::: {}
+Haralambos Simeonidis Prize (ANPEC), Best PhD Thesis
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2007–2009
+:::
+
+::: {}
+Robert M. Rose Presidential Fellowship, MIT
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2006–2007
+:::
+
+::: {}
+CAPES Fellowship for Master's Program in Economics
+:::
+:::
+
+::: {.cv-entry}
+::: {.year}
+2002–2005
+:::
+
+::: {}
+FGV Fellowship, B.Sc. in Economics
+:::
+:::
+
+## Invited Seminars and Presentations
+
+Regular presenter at international conferences (Society for Economic Dynamics, AFA, WFA, LACEA/LAMES, Brazilian Society of Econometrics), multilateral institutions, central banks (Banco de Portugal, Federal Reserve Banks, Banco Central do Brasil), and leading universities across Brazil, the United States, and Europe.
+
+Recent presentations (2023-2025) include the International Monetary Fund, FGV-EESP, INSPER, and the Lubramacro conference series.
+
+A full list is available in the [Lattes CV](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4233378D2).
+
+## Professional Service
+
+- Referee for *Review of Economic Studies*, *Review of Financial Studies*, *Management Science*, *Journal of Economic Theory*, *Economic Theory*, *American Economic Journal: Macroeconomics*, *Journal of Banking and Finance*, *Journal of Mathematical Economics*, *Mathematical Social Sciences*, *RBFin*, *Empirical Economics*, *IMF Economic Review*
+
+- Director of Publications, Brazilian Society of Finance (SBFin), 2021–2025
+
+- Selection committee for the 34th and 37th Meetings of the Brazilian Econometric Society (SBE), the Brazilian Finance Society, and the 2024 LACEA/LAMES meeting
+
+- Co-organizer, Macroeconomics and Finance, Rede de Economia Aplicada (REAP)
+
+## Teaching
+
+**FGV:** Asset Pricing (Graduate), Topics in Monetary Policy (Graduate), Corporate Finance (Undergraduate), Finance (Undergraduate), Macro-finance (Graduate), Macroeconomic Theory II (Graduate Core), Topics in Monetary and Fiscal Policy (Graduate), Macroeconomic Theory III (Graduate Core)
+
+**MIT Teaching Assistant:** Economic Crises (PhD - Macro Core), Microeconomic Theory and Policy (Grad/Undergrad), Introductory Microeconomics (Undergrad), Intermediate Microeconomics (Undergrad)  
+*Main Instructor:* Math Camp (PhD)
+
+**FGV Teaching Assistant:** Advanced Economic Theory (Grad), Microeconomic Theory I (Grad), Microeconomics I (Undergrad)

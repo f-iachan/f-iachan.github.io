@@ -1,0 +1,21 @@
+---
+Title: "Home"
+page-layout: article
+toc: false
+---
+
+::: {.home-intro}
+
+::: {}
+I am an Associate Professor of Economics at [FGV EPGE](https://epge.fgv.br). I hold a PhD in Economics from [MIT](https://economics.mit.edu), obtained in 2012. 
+
+My research examines how financial, informational, and institutional frictions influence the macroeconomy and asset prices.
+
+I have studied portfolio choice and asset pricing, labor market dynamics and inequality, monetary policy transmission, credit constraints and investment, coordination in financial markets, and the role of informality in housing and labor markets.
+
+**Research Interests:** Macroeconomics, Financial Economics
+:::
+
+![](assets/portrait.jpg){.profile-photo}
+
+:::
