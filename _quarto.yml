@@ -39,7 +39,7 @@ website:
         href: https://epge.fgv.br
 
   # For Google Scholar indexing
-  site-url: https://felipeiachan.github.io
+  site-url: https://f-iachan.github.io
   
 format:
   html:
@@ -52,3 +52,7 @@ format:
     include-in-header:
       - text: |
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+publish:
+  gh-pages:
+    repo: f-iachan/f-iachan.github.io
