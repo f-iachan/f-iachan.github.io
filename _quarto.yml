@@ -13,6 +13,7 @@ project:
     - "!README.md"
 
 website:
+  google-analytics: "G-N5FDW9G7BT"
   title: "Felipe S. Iachan"
   description: "Associate Professor of Economics, FGV EPGE"
   favicon: assets/favicon.svg
