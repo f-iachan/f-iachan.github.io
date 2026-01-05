@@ -24,10 +24,12 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: publications.qmd
-        text: Publications
-      - href: working-papers.qmd
-        text: Working Papers
+      - text: Research
+        menu:
+          - href: working-papers.qmd
+            text: Working Papers
+          - href: publications.qmd
+            text: Publications
       - href: cv.qmd
         text: CV
       - href: links.qmd

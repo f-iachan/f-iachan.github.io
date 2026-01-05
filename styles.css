@@ -7,7 +7,7 @@ html {
 
 /* Better spacing for main content */
 main.content {
-  max-width: 780px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
@@ -33,6 +33,13 @@ main.content {
   .home-intro .profile-photo {
     order: -1;
     justify-self: center;
+  }
+  
+  /* Fix mobile typography: left-align, no hyphens */
+  .home-intro > div:first-child {
+    text-align: left;
+    hyphens: none;
+    line-height: 1.55;
   }
 }
 

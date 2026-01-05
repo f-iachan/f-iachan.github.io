@@ -118,6 +118,34 @@ body {
   }
 }
 
+// Dropdown menu styling (2026 clean academic)
+.dropdown-menu {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 0.25rem;
+  background-color: #ffffff;
+}
+
+.dropdown-item {
+  border-radius: 4px;
+  padding: 0.45rem 0.65rem;
+  font-weight: 600;
+  color: rgba(20, 36, 82, 0.86);
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(20, 36, 82, 1);
+}
+
+.dropdown-item:active {
+  background-color: rgba(28, 47, 103, 0.10);
+  color: rgba(20, 36, 82, 1);
+}
+
 // Section headings (Apple-style hierarchy: weight/size + slight negative tracking)
 h1, h2, h3, h4 {
   margin-top: 1.5rem;
