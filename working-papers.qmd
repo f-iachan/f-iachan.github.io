@@ -4,14 +4,14 @@ page-layout: article
 toc: false
 ---
 
-"Minimum wages, Inequality, and the Informal Sector", joint with Rafael Machado Parente and Luiz Brotherhood.  
+"Minimum wages, Inequality, and the Informal Sector", joint with [Rafael Machado Parente](https://www.rparente.com) and [Luiz Brotherhood](https://sites.google.com/site/luizbrotherhood/).  
 *Revised and resubmitted, American Economic Review*. [[page](papers/minwage-inequality.qmd), [pdf](working_papers/Minw_Ineq_Inf.pdf)]
 
-"Subjective beliefs, disagreement, and market return predictability", joint with Raul Riva.  
+"Subjective beliefs, disagreement, and market return predictability", joint with [Raul Riva](https://rgriva.github.io).  
 *Revision requested, Critical Finance Review*. [[page](papers/ibes-market-returns.qmd), [pdf](working_papers/IBES_and_Market_Returns.pdf)]
 
-"Monetary policy and labor markets in a developing economy", joint with Diego B. P. Gomes, Ana Paula Ruhe, and Cezar Santos.  
+"Monetary policy and labor markets in a developing economy", joint with [Diego B. P. Gomes](https://scholar.google.com.br/citations?user=rdZgUZwAAAAJ&hl=pt-BR), [Ana Paula Ruhe](https://sites.google.com/view/anapaularuhe/home), and [Cezar Santos](https://sites.google.com/site/czrsantos/).  
 *Revised and resubmitted, Journal of Money, Credit, and Banking*. [[page](papers/monetary-policy-heterogeneity.qmd), [pdf](working_papers/Monetary_Policy_and_Heterogeneity.pdf)]
 
-"Urban growth risk and prices: A dynamic spatial theory", joint with Leandro Gorno and Ana Paula Ruhe.  
+"Urban growth risk and prices: A dynamic spatial theory", joint with [Leandro Gorno](https://sites.google.com/site/leandrogorno/) and [Ana Paula Ruhe](https://sites.google.com/view/anapaularuhe/home).  
 *Work in Progress*. Draft and slides available upon request.
