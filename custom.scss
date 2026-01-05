@@ -333,39 +333,12 @@ h3 {
   }
 }
 
-// Home page intro layout
-.home-intro {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  
-  > div:first-child {
-    flex: 1 1 400px;
-  }
-}
-
 // Profile photo
 .profile-photo {
   max-width: 220px;
   width: 100%;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-// Mobile: show photo before text (larger, more prominent)
-@media (max-width: 768px) {
-  .home-intro {
-    flex-direction: column-reverse;
-    gap: 1.5rem;
-    
-    .profile-photo {
-      max-width: 280px;
-      width: 100%;
-      align-self: center;
-      margin-bottom: 0.5rem;
-    }
-  }
 }
 
 // Download button

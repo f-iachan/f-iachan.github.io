@@ -33,7 +33,6 @@ Thumbs.db
 /site_libs/
 /robots.txt
 /search.json
-/styles.css
 /sitemap.xml
 
 **/*.quarto_ipynb

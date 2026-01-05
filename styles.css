@@ -1,0 +1,101 @@
+/* Additional styles that complement custom.scss */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   2026 SUBTLE BACKGROUND TREATMENT
+   Toggle: set body background to #ffffff to disable
+   ============================================ */
+
+body {
+  background-color: #f7f8f9; /* extremely subtle warm gray */
+}
+
+/* Better spacing for main content */
+main.content {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 2.5rem 2.25rem;
+  background: #ffffff; /* white content on subtle background */
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04); /* barely visible */
+}
+
+/* Home page layout (desktop: text then photo; mobile: photo then text) */
+.home-intro {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  grid-template-areas: "text photo";
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.home-intro .home-text {
+  grid-area: text;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.home-intro .home-photo {
+  grid-area: photo;
+}
+
+@media (max-width: 768px) {
+  .home-intro {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "text";
+    gap: 1.5rem;
+  }
+
+  .home-intro .home-photo {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .home-intro .profile-photo {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  /* Fix mobile typography: left-align, no hyphens */
+  .home-intro .home-text {
+    text-align: left;
+    hyphens: none;
+    line-height: 1.55;
+  }
+
+  /* Reduce padding on mobile */
+  main.content {
+    padding: 1.75rem 1.25rem;
+    border-radius: 0; /* no rounded corners on mobile */
+  }
+}
+
+/* Research page - working paper distinction */
+.working-paper {
+  border-left: 3px solid #E8ECF4;
+  padding-left: 1rem;
+}
+
+/* Links with icons */
+a.paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Footer refinement */
+.page-footer {
+  border-top: 1px solid #E2E8F0;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #4A5568;
+}
+
+
