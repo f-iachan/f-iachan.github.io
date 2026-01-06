@@ -24,36 +24,51 @@ main.content {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04); /* barely visible */
 }
 
-/* Home page layout */
+/* Home page layout (desktop: text then photo; mobile: photo then text) */
 .home-intro {
   display: grid;
   grid-template-columns: 1fr 220px;
+  grid-template-areas: "text photo";
   gap: 2.5rem;
   align-items: start;
 }
 
-.home-intro > div:first-child {
+.home-intro .home-text {
+  grid-area: text;
   text-align: justify;
   hyphens: auto;
 }
 
-@media (max-width: 600px) {
+.home-intro .home-photo {
+  grid-area: photo;
+}
+
+@media (max-width: 768px) {
   .home-intro {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "text";
+    gap: 1.5rem;
   }
-  
-  .home-intro .profile-photo {
-    order: -1;
+
+  .home-intro .home-photo {
     justify-self: center;
+    text-align: center;
   }
-  
+
+  .home-intro .profile-photo {
+    max-width: 280px;
+    width: 100%;
+  }
+
   /* Fix mobile typography: left-align, no hyphens */
-  .home-intro > div:first-child {
+  .home-intro .home-text {
     text-align: left;
     hyphens: none;
     line-height: 1.55;
   }
-  
+
   /* Reduce padding on mobile */
   main.content {
     padding: 1.75rem 1.25rem;
@@ -82,3 +97,5 @@ a.paper-link {
   font-size: 0.9rem;
   color: #4A5568;
 }
+
+
