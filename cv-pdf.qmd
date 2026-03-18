@@ -40,7 +40,7 @@ Rio de Janeiro, RJ, Brazil 22250-900
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
 \raggedleft
-\url{https://felipeiachan.github.io}\\
+\url{https://f-iachan.github.io}\\
 \href{mailto:felipe.iachan@fgv.br}{felipe.iachan@fgv.br}
 \end{minipage}
 
@@ -104,7 +104,7 @@ with Plamen Nenov -- \emph{Journal of Economic Theory}, 158 (2015), 739-768.
 
 \vspace{0.2cm}
 
-**Selected Working Papers** (see \href{https://felipeiachan.github.io/working-papers.html}{website})
+**Selected Working Papers** (see \href{https://f-iachan.github.io/working-papers.html}{website})
 
 \vspace{0.2cm}
 

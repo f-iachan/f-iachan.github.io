@@ -34,7 +34,7 @@ format:
         <meta name="citation_title" content="PAPER TITLE">
         <meta name="citation_author" content="LASTNAME, FIRSTNAME">
         <meta name="citation_publication_date" content="YYYY">
-        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/working_papers/FILE.pdf">
+        <meta name="citation_pdf_url" content="https://f-iachan.github.io/working_papers/FILE.pdf">
 
 page-layout: article
 toc: false

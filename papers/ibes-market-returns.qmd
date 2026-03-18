@@ -18,7 +18,7 @@ format:
         <meta name="citation_author" content="Iachan, Felipe S.">
         <meta name="citation_author" content="Riva, Raul">
         <meta name="citation_publication_date" content="2024">
-        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/working_papers/IBES_and_Market_Returns.pdf">
+        <meta name="citation_pdf_url" content="https://f-iachan.github.io/working_papers/IBES_and_Market_Returns.pdf">
 
 page-layout: article
 toc: false

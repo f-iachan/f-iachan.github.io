@@ -21,7 +21,7 @@ format:
         <meta name="citation_author" content="Brotherhood, Luiz">
         <meta name="citation_author" content="Iachan, Felipe S.">
         <meta name="citation_publication_date" content="2025">
-        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/working_papers/Minw_Ineq_Inf.pdf">
+        <meta name="citation_pdf_url" content="https://f-iachan.github.io/working_papers/Minw_Ineq_Inf.pdf">
 
 page-layout: article
 toc: false
@@ -35,7 +35,7 @@ How do minimum wages affect earnings inequality in countries with large informal
 
 ## Status
 
-**Revised and Resubmitted**, *American Economic Review*
+*Revised version soon*
 
 ## Authors
 

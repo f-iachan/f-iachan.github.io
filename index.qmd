@@ -1,5 +1,5 @@
 ---
-Title: "Home"
+title: "Felipe S. Iachan"
 page-layout: article
 toc: false
 ---

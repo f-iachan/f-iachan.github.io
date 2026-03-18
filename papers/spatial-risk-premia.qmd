@@ -1,0 +1,37 @@
+---
+title: "Spatial Risk Premia in Residential Real Estate"
+author: 
+  - name: Leandro Gorno
+    affiliation: Universidad de los Andes
+  - name: Felipe S. Iachan
+    affiliation: FGV EPGE
+  - name: Ana Paula Ruhe
+    affiliation: FGV EPGE
+date: "2026"
+
+# Google Scholar metadata - CRITICAL for indexing
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta name="citation_title" content="Spatial Risk Premia in Residential Real Estate">
+        <meta name="citation_author" content="Gorno, Leandro">
+        <meta name="citation_author" content="Iachan, Felipe S.">
+        <meta name="citation_author" content="Ruhe, Ana Paula">
+        <meta name="citation_publication_date" content="2026">
+
+page-layout: article
+toc: false
+---
+
+## Status
+
+*Work in Progress*. Draft and slides available upon request.
+
+> **Former title:** "Urban growth risk and prices: A dynamic spatial theory"
+
+## Authors
+
+- **Leandro Gorno** ([website](https://sites.google.com/site/leandrogorno/))
+- **Felipe S. Iachan** (FGV EPGE)
+- **Ana Paula Ruhe** ([website](https://sites.google.com/view/anapaularuhe/home))
