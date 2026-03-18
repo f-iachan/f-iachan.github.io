@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://f-iachan.github.io/working-papers.html</loc>
-    <lastmod>2026-01-06T12:05:53.013Z</lastmod>
+    <lastmod>2026-03-18T16:26:38.059Z</lastmod>
   </url>
   <url>
-    <loc>https://f-iachan.github.io/papers/monetary-policy-heterogeneity.html</loc>
-    <lastmod>2026-01-06T12:02:17.490Z</lastmod>
-  </url>
-  <url>
-    <loc>https://f-iachan.github.io/papers/minwage-inequality.html</loc>
-    <lastmod>2026-01-06T12:02:17.489Z</lastmod>
-  </url>
-  <url>
-    <loc>https://f-iachan.github.io/links.html</loc>
-    <lastmod>2026-01-06T12:02:17.489Z</lastmod>
-  </url>
-  <url>
-    <loc>https://f-iachan.github.io/cv.html</loc>
-    <lastmod>2026-01-06T12:02:17.490Z</lastmod>
-  </url>
-  <url>
-    <loc>https://f-iachan.github.io/index.html</loc>
-    <lastmod>2026-01-06T12:05:53.013Z</lastmod>
-  </url>
-  <url>
-    <loc>https://f-iachan.github.io/papers/ibes-market-returns.html</loc>
-    <lastmod>2026-01-06T12:02:17.489Z</lastmod>
+    <loc>https://f-iachan.github.io/papers/spatial-risk-premia.html</loc>
+    <lastmod>2026-03-18T16:26:52.109Z</lastmod>
   </url>
   <url>
     <loc>https://f-iachan.github.io/papers/minwage-template.html</loc>
-    <lastmod>2026-01-06T12:02:17.489Z</lastmod>
+    <lastmod>2026-03-18T16:28:52.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://f-iachan.github.io/papers/ibes-market-returns.html</loc>
+    <lastmod>2026-03-18T16:28:49.444Z</lastmod>
+  </url>
+  <url>
+    <loc>https://f-iachan.github.io/index.html</loc>
+    <lastmod>2026-03-18T16:28:53.331Z</lastmod>
+  </url>
+  <url>
+    <loc>https://f-iachan.github.io/cv.html</loc>
+    <lastmod>2026-03-18T16:21:19.168Z</lastmod>
+  </url>
+  <url>
+    <loc>https://f-iachan.github.io/links.html</loc>
+    <lastmod>2026-03-18T16:21:19.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://f-iachan.github.io/papers/minwage-inequality.html</loc>
+    <lastmod>2026-03-18T16:28:50.659Z</lastmod>
+  </url>
+  <url>
+    <loc>https://f-iachan.github.io/papers/monetary-policy-heterogeneity.html</loc>
+    <lastmod>2026-03-18T16:28:51.527Z</lastmod>
   </url>
   <url>
     <loc>https://f-iachan.github.io/publications.html</loc>
-    <lastmod>2026-01-06T12:05:53.013Z</lastmod>
+    <lastmod>2026-03-18T16:21:19.177Z</lastmod>
   </url>
 </urlset>
