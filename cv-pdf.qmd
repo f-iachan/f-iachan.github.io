@@ -1,5 +1,4 @@
 ---
-title: "Curriculum Vitae"
 format:
   pdf:
     documentclass: article
@@ -25,6 +24,7 @@ format:
 ---
 
 \begin{center}
+{\large Curriculum Vitae}\\[0.4em]
 {\Large Felipe Saraiva Iachan}
 \end{center}
 
@@ -148,7 +148,7 @@ Co-organizer, Macroeconomics and Finance, \emph{Rede de Economia Aplicada (REAP)
 **Teaching**
 
 \begin{description}
-\item[FGV] Asset Pricing (Graduate), Topics in Monetary Policy (Graduate), Corporate Finance (Undergraduate), Finance (Undergraduate), Macro-finance (Graduate), Macroeconomic Theory II (Graduate Core), Topics in Monetary and Fiscal Policy (Graduate), Macroeconomic Theory III (Graduate Core).
+\item[FGV] Asset Pricing (Graduate), Topics in Monetary Policy (Graduate), Topics in Finance (Graduate), Corporate Finance (Undergraduate), Finance (Undergraduate), Macro-finance (Graduate), Macroeconomic Theory II (Graduate Core), Topics in Monetary and Fiscal Policy (Graduate), Macroeconomic Theory III (Graduate Core).
 \item[MIT] Teaching Assistant: Economic Crises (PhD - Macro Core), Microeconomic Theory and Policy (Grad/Undergrad), Introductory Microeconomics (Undergrad), Intermediate Microeconomics (Undergrad).\\
 Main Instructor: Math Camp (PhD).
 \item[FGV] Teaching Assistant: Advanced Economic Theory (Grad), Microeconomic Theory I (Grad), Microeconomics I (Undergrad).
