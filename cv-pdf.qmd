@@ -16,7 +16,7 @@ format:
         \usepackage{fancyhdr}
         \pagestyle{fancy}
         \fancyhf{}
-        \chead{\textit{Felipe S. Iachan · Curriculum Vitae · January 2025}}
+        \chead{\textit{Felipe S. Iachan · Curriculum Vitae · April 2026}}
         \renewcommand{\headrulewidth}{0pt}
         \setlength{\parskip}{\medskipamount}
         \setlength{\parindent}{0pt}
@@ -112,7 +112,7 @@ with Plamen Nenov -- \emph{Journal of Economic Theory}, 158 (2015), 739-768.
 
 Regular presenter at international conferences (Society for Economic Dynamics, AFA, WFA, LACEA/LAMES, Brazilian Society of Econometrics), multilateral institutions, central banks (Banco de Portugal, Federal Reserve Banks, Banco Central do Brasil), and leading universities across Brazil, the United States, and Europe.
 
-Recent presentations (2023-2025) include the International Monetary Fund, FGV-EESP, INSPER, and the Lubramacro conference series.
+Recent presentations (2023-2026) include the International Monetary Fund, FGV-EESP, INSPER, the Lubramacro conference series, and PUC Chile. Scheduled: Society for Economic Dynamics (SED) Annual Meeting.
 
 A full list is available in the \href{https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4233378D2}{Lattes CV}.
 
