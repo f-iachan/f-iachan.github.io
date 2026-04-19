@@ -21,13 +21,6 @@
     "text": "Work in Progress. Draft and slides available upon request.\n\nFormer title: “Urban growth risk and prices: A dynamic spatial theory”"
   },
   {
-    "objectID": "papers/spatial-risk-premia.html#authors",
-    "href": "papers/spatial-risk-premia.html#authors",
-    "title": "Spatial Risk Premia in Residential Real Estate",
-    "section": "Authors",
-    "text": "Authors\n\nLeandro Gorno (website)\nFelipe S. Iachan (FGV EPGE)\nAna Paula Ruhe (website)"
-  },
-  {
     "objectID": "papers/minwage-template.html",
     "href": "papers/minwage-template.html",
     "title": "TEMPLATE: Working Paper Landing Page",
@@ -46,14 +39,7 @@
     "href": "papers/ibes-market-returns.html",
     "title": "Subjective Beliefs, Disagreement, and Market Return Predictability",
     "section": "",
-    "text": "We jointly evaluate the ability of consensus beliefs about long-term earnings growth and analyst disagreement to predict stock market returns. We bridge the gap between the strands of literature testing theories of belief extrapolation and disagreement-fueled over-pricing. Using I/B/E/S analyst forecast data from 1981 up to 2022 and conducting both in-sample and out-of-sample analyses, we find limited evidence that these measures of subjective beliefs predict returns. Our analyses across specifications and sample periods highlight the fragility of prior findings to the inclusion of relevant controls or the extension of sample periods.\nDownload PDF"
-  },
-  {
-    "objectID": "papers/ibes-market-returns.html#abstract",
-    "href": "papers/ibes-market-returns.html#abstract",
-    "title": "Subjective Beliefs, Disagreement, and Market Return Predictability",
-    "section": "",
-    "text": "We jointly evaluate the ability of consensus beliefs about long-term earnings growth and analyst disagreement to predict stock market returns. We bridge the gap between the strands of literature testing theories of belief extrapolation and disagreement-fueled over-pricing. Using I/B/E/S analyst forecast data from 1981 up to 2022 and conducting both in-sample and out-of-sample analyses, we find limited evidence that these measures of subjective beliefs predict returns. Our analyses across specifications and sample periods highlight the fragility of prior findings to the inclusion of relevant controls or the extension of sample periods.\nDownload PDF"
+    "text": "Download PDF"
   },
   {
     "objectID": "papers/ibes-market-returns.html#status",
@@ -61,13 +47,6 @@
     "title": "Subjective Beliefs, Disagreement, and Market Return Predictability",
     "section": "Status",
     "text": "Status\nRevision Requested, Critical Finance Review"
-  },
-  {
-    "objectID": "papers/ibes-market-returns.html#authors",
-    "href": "papers/ibes-market-returns.html#authors",
-    "title": "Subjective Beliefs, Disagreement, and Market Return Predictability",
-    "section": "Authors",
-    "text": "Authors\n\nFelipe S. Iachan (FGV EPGE)\nRaul Riva (Northwestern University)"
   },
   {
     "objectID": "index.html",
@@ -158,14 +137,7 @@
     "href": "papers/minwage-inequality.html",
     "title": "Minimum Wages, Inequality, and the Informal Sector",
     "section": "",
-    "text": "How do minimum wages affect earnings inequality in countries with large informal sectors? We provide reduced-form evidence that the 2000s minimum wage hike in Brazil raised overall inequality by increasing inequality within the informal sector. We develop a model where heterogeneous firms select into informality to investigate when and how raising the minimum wage can increase inequality. We calibrate the model to Brazil and find that, by generating substantial informality, the increase in the minimum wage raised overall inequality by 4.1%. These results highlight how movements into and out of the informal sector modulate the effects of formal labor legislation.\nDownload PDF"
-  },
-  {
-    "objectID": "papers/minwage-inequality.html#abstract",
-    "href": "papers/minwage-inequality.html#abstract",
-    "title": "Minimum Wages, Inequality, and the Informal Sector",
-    "section": "",
-    "text": "How do minimum wages affect earnings inequality in countries with large informal sectors? We provide reduced-form evidence that the 2000s minimum wage hike in Brazil raised overall inequality by increasing inequality within the informal sector. We develop a model where heterogeneous firms select into informality to investigate when and how raising the minimum wage can increase inequality. We calibrate the model to Brazil and find that, by generating substantial informality, the increase in the minimum wage raised overall inequality by 4.1%. These results highlight how movements into and out of the informal sector modulate the effects of formal labor legislation.\nDownload PDF"
+    "text": "Download PDF"
   },
   {
     "objectID": "papers/minwage-inequality.html#status",
@@ -175,25 +147,11 @@
     "text": "Status\nRevised version soon"
   },
   {
-    "objectID": "papers/minwage-inequality.html#authors",
-    "href": "papers/minwage-inequality.html#authors",
-    "title": "Minimum Wages, Inequality, and the Informal Sector",
-    "section": "Authors",
-    "text": "Authors\n\nRafael Machado Parente (International Monetary Fund)\nLuiz Brotherhood (Universitat de Barcelona)\nFelipe S. Iachan (FGV EPGE)"
-  },
-  {
     "objectID": "papers/monetary-policy-heterogeneity.html",
     "href": "papers/monetary-policy-heterogeneity.html",
     "title": "Monetary Policy and Labor Markets in a Developing Economy",
     "section": "",
-    "text": "We study the distributional effects of monetary policy in a developing economy with extensive employment informality. In particular, we examine how monetary policy impacts labor income growth and employment transitions using micro-level panel data. Adopting high-frequency identification, we construct a series of monetary policy surprises for Brazil that serves as an external instrument in a proxy-SVAR, thus allowing us to recover monetary policy shocks. Following a monetary contraction, both formal and informal workers experience declines in real income, with effects that are similarly pronounced across the low and middle-income quartiles, while higher earners suffer less. A monetary contraction also reduces the likelihood of large income gains, shifting the income growth distribution leftward. Moreover, a shock that raises the interest rate increases informality and unemployment persistence by making transitions to formal employment less frequent.\nDownload PDF"
-  },
-  {
-    "objectID": "papers/monetary-policy-heterogeneity.html#abstract",
-    "href": "papers/monetary-policy-heterogeneity.html#abstract",
-    "title": "Monetary Policy and Labor Markets in a Developing Economy",
-    "section": "",
-    "text": "We study the distributional effects of monetary policy in a developing economy with extensive employment informality. In particular, we examine how monetary policy impacts labor income growth and employment transitions using micro-level panel data. Adopting high-frequency identification, we construct a series of monetary policy surprises for Brazil that serves as an external instrument in a proxy-SVAR, thus allowing us to recover monetary policy shocks. Following a monetary contraction, both formal and informal workers experience declines in real income, with effects that are similarly pronounced across the low and middle-income quartiles, while higher earners suffer less. A monetary contraction also reduces the likelihood of large income gains, shifting the income growth distribution leftward. Moreover, a shock that raises the interest rate increases informality and unemployment persistence by making transitions to formal employment less frequent.\nDownload PDF"
+    "text": "Download PDF"
   },
   {
     "objectID": "papers/monetary-policy-heterogeneity.html#status",
@@ -201,13 +159,6 @@
     "title": "Monetary Policy and Labor Markets in a Developing Economy",
     "section": "Status",
     "text": "Status\nRevised and Resubmitted, Journal of Money, Credit, and Banking"
-  },
-  {
-    "objectID": "papers/monetary-policy-heterogeneity.html#authors",
-    "href": "papers/monetary-policy-heterogeneity.html#authors",
-    "title": "Monetary Policy and Labor Markets in a Developing Economy",
-    "section": "Authors",
-    "text": "Authors\n\nDiego B. P. Gomes (International Monetary Fund)\nFelipe S. Iachan (FGV EPGE)\nAna Paula Ruhe (FGV EPGE)\nCezar Santos (FGV EPGE)"
   },
   {
     "objectID": "publications.html",
