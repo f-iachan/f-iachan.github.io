@@ -37,8 +37,8 @@ website:
   
   page-footer:
     left: "© 2026 Felipe S. Iachan"
-    right: 
-      - text: "FGV EPGE"
+    right:
+      - text: "epge.fgv.br ↗"
         href: https://epge.fgv.br
 
   # For Google Scholar indexing

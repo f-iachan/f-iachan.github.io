@@ -4,14 +4,61 @@ page-layout: article
 toc: false
 ---
 
-"Minimum wages, Inequality, and the Informal Sector", joint with [Rafael Machado Parente](https://www.rparente.com) and [Luiz Brotherhood](https://sites.google.com/site/luizbrotherhood/).  
-*Revised version soon*. [[page](papers/minwage-inequality.qmd), [pdf](working_papers/Minw_Ineq_Inf.pdf)]
+:::{.paper}
+:::{.wp-tag}
+WP / 01
+:::
+:::{.paper-body}
+"Minimum wages, Inequality, and the Informal Sector", joint with [Rafael Machado Parente](https://www.rparente.com) and [Luiz Brotherhood](https://sites.google.com/site/luizbrotherhood/).
 
-"Subjective beliefs, disagreement, and market return predictability", joint with [Raul Riva](https://rgriva.github.io).  
-*Revision requested, Critical Finance Review*. [[page](papers/ibes-market-returns.qmd), [pdf](working_papers/IBES_and_Market_Returns.pdf)]
+[*Revised version soon*]{.status .wip}
+:::
+:::{.actions}
+[page →](papers/minwage-inequality.qmd)
+[pdf ↓](working_papers/Minw_Ineq_Inf.pdf)
+:::
+:::
 
-"Monetary policy and labor markets in a developing economy", joint with [Diego B. P. Gomes](https://scholar.google.com.br/citations?user=rdZgUZwAAAAJ&hl=pt-BR), [Ana Paula Ruhe](https://sites.google.com/view/anapaularuhe/home), and [Cezar Santos](https://sites.google.com/site/czrsantos/).  
-*Revised and resubmitted, Journal of Money, Credit, and Banking*. [[page](papers/monetary-policy-heterogeneity.qmd), [pdf](working_papers/Monetary_Policy_and_Heterogeneity.pdf)]
+:::{.paper}
+:::{.wp-tag}
+WP / 02
+:::
+:::{.paper-body}
+"Subjective beliefs, disagreement, and market return predictability", joint with [Raul Riva](https://rgriva.github.io).
 
-"Spatial risk premia in residential real estate", joint with [Leandro Gorno](https://sites.google.com/site/leandrogorno/) and [Ana Paula Ruhe](https://sites.google.com/view/anapaularuhe/home).  
-*Work in Progress*. [[page](papers/spatial-risk-premia.qmd)]
+[*Revision requested, Critical Finance Review*]{.status .rev}
+:::
+:::{.actions}
+[page →](papers/ibes-market-returns.qmd)
+[pdf ↓](working_papers/IBES_and_Market_Returns.pdf)
+:::
+:::
+
+:::{.paper}
+:::{.wp-tag}
+WP / 03
+:::
+:::{.paper-body}
+"Monetary policy and labor markets in a developing economy", joint with [Diego B. P. Gomes](https://scholar.google.com.br/citations?user=rdZgUZwAAAAJ&hl=pt-BR), [Ana Paula Ruhe](https://sites.google.com/view/anapaularuhe/home), and [Cezar Santos](https://sites.google.com/site/czrsantos/).
+
+[*Revised and resubmitted, Journal of Money, Credit, and Banking*]{.status .rnr}
+:::
+:::{.actions}
+[page →](papers/monetary-policy-heterogeneity.qmd)
+[pdf ↓](working_papers/Monetary_Policy_and_Heterogeneity.pdf)
+:::
+:::
+
+:::{.paper}
+:::{.wp-tag}
+WP / 04
+:::
+:::{.paper-body}
+"Spatial risk premia in residential real estate", joint with [Leandro Gorno](https://sites.google.com/site/leandrogorno/) and [Ana Paula Ruhe](https://sites.google.com/view/anapaularuhe/home).
+
+[*Work in Progress*]{.status .wip}
+:::
+:::{.actions}
+[page →](papers/spatial-risk-premia.qmd)
+:::
+:::

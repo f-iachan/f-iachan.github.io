@@ -1,393 +1,637 @@
 /*-- scss:defaults --*/
 
-// Import Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap');
 
-// ------------------------------------------------------------
-// A/B test toggles (flip one line, re-render)
-// ------------------------------------------------------------
-// Option A (modern, typographic): no underline
-// Option B (classic academic): underline
-$h2-underline: true !default;
+// Warm-shifted palette (cream + warm greys)
+$bg:          #f4f2ea;
+$bg-2:        #ebe7db;
+$ink:         #1a1814;
+$ink-2:       #2d2a24;
+$ink-3:       #65615a;
+$ink-4:       #9a958a;
+$rule:        #ddd8ca;
+$rule-strong: #ccc6b4;
+$accent:      #1e3a5f;
+$accent-soft: #eef1f6;
 
-// Primary colors
-$fgv-blue: #1C2F67;
-$fgv-blue-dark: #142452;
-$fgv-blue-light: #2A4080;
-
-// Neutral palette
-$text-dark: #2D3748;
-$text-muted: #4A5568;
-$bg-light: #F8FAFC;
-$bg-accent: #E8ECF4;
-$border-light: #E2E8F0;
-
-// Apply to Bootstrap/Quarto variables
-$primary: $fgv-blue;
-$link-color: $fgv-blue;
-$navbar-bg: #ffffff;
+// Bootstrap overrides
+$primary:        $accent;
+$body-bg:        $bg;
+$body-color:     $ink-2;
+$link-color:     $ink;
+$link-hover-color: $accent;
+$border-color:   $rule;
+$navbar-bg:      rgba(244, 242, 234, 0.85);
 
 // Typography
-$font-family-sans-serif: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-$font-family-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-$headings-font-family: $font-family-sans-serif;
-$font-size-base: 1.05rem;
-$line-height-base: 1.7;
+$font-family-sans-serif: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-family-monospace:  'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+$headings-font-family:   $font-family-sans-serif;
+$font-size-base:         0.9375rem;       // 15px
+$line-height-base:       1.55;
 
-// Headings
-$headings-color: $fgv-blue-dark;
-$headings-font-weight: 600;
+$headings-color:       $ink;
+$headings-font-weight: 500;
 
-// Links
 $link-decoration: none;
-$link-hover-color: $fgv-blue-dark;
 
 /*-- scss:rules --*/
 
-body {
-  color: $text-dark;
+// Expose tokens as CSS custom properties
+:root {
+  --bg: #{$bg};
+  --bg-2: #{$bg-2};
+  --ink: #{$ink};
+  --ink-2: #{$ink-2};
+  --ink-3: #{$ink-3};
+  --ink-4: #{$ink-4};
+  --rule: #{$rule};
+  --rule-strong: #{$rule-strong};
+  --accent: #{$accent};
+  --accent-soft: #{$accent-soft};
 }
 
-// Navbar refinements
+html, body {
+  background: $bg;
+  color: $ink;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "cv11";
+}
+
+.mono, code, kbd, pre, samp {
+  font-family: $font-family-monospace;
+}
+
+// ---- links ---------------------------------------------------
+a {
+  color: $ink;
+  text-decoration: none;
+}
+
+.quarto-body a,
+main a,
+.content a {
+  color: inherit;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  transition: color .2s ease, background-size .3s ease;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Strip underline trick from nav/brand/buttons/profile icons
+.navbar a,
+.navbar-brand,
+.page-footer a,
+.btn-download,
+.profile-icon,
+.profile-icon * {
+  background-image: none !important;
+}
+
+// ---- navbar --------------------------------------------------
 .navbar {
-  /* 2026 light “glass” navbar */
-  background-color: rgba(255, 255, 255, 0.78) !important;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.9);
-  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.04);
+  background-color: rgba(244, 242, 234, 0.85) !important;
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+  backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid $rule;
+  box-shadow: none;
+  padding: 0.5rem 0;
 }
 
-/* Quarto currently emits `data-bs-theme="dark"` on the navbar; force light navbar tokens for proper contrast */
 .navbar[data-bs-theme="dark"] {
   color-scheme: light;
-  --bs-navbar-color: rgba(20, 36, 82, 0.86);
-  --bs-navbar-hover-color: rgba(20, 36, 82, 1);
-  --bs-navbar-active-color: rgba(20, 36, 82, 1);
-  --bs-navbar-disabled-color: rgba(20, 36, 82, 0.55);
-  --bs-navbar-brand-color: rgba(20, 36, 82, 1);
-  --bs-navbar-brand-hover-color: rgba(20, 36, 82, 1);
-  --bs-navbar-toggler-border-color: rgba(226, 232, 240, 0.9);
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2820%2c 36%2c 82%2c 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-color: #{$ink-3};
+  --bs-navbar-hover-color: #{$ink};
+  --bs-navbar-active-color: #{$ink};
+  --bs-navbar-brand-color: #{$ink};
+  --bs-navbar-brand-hover-color: #{$ink};
+  --bs-navbar-toggler-border-color: #{$rule};
 }
 
 .navbar-brand {
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: $ink !important;
 }
 
-/* Navbar link styling (modern, minimal, clear active state) */
 .navbar .navbar-nav .nav-link {
-  color: rgba(20, 36, 82, 0.86) !important; /* $fgv-blue-dark */
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  padding: 0.45rem 0.65rem;
-  border-radius: 999px;
-  transition: background-color 160ms ease, color 160ms ease;
+  color: $ink-3 !important;
+  font-weight: 400;
+  font-size: 13.5px;
+  letter-spacing: 0;
+  padding: 0.4rem 0;
+  margin: 0 0.85rem;
+  border-radius: 0;
+  background: none !important;
+  position: relative;
+  transition: color .2s ease;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
-  color: rgba(20, 36, 82, 1) !important;
-  background-color: rgba(28, 47, 103, 0.06);
+  color: $ink !important;
+  background: none !important;
 }
 
 .navbar .navbar-nav .nav-link.active,
-.navbar .navbar-nav .nav-link[aria-current="page"] {
-  color: rgba(20, 36, 82, 1) !important;
-  background-color: rgba(28, 47, 103, 0.10);
+.navbar .navbar-nav .nav-link[aria-current="page"],
+.navbar .navbar-nav .show > .nav-link {
+  color: $ink !important;
+  background: none !important;
 }
 
-/* Ensure brand + toggler work on light navbar */
-.navbar .navbar-brand {
-  color: rgba(20, 36, 82, 1) !important;
+.navbar .navbar-nav .nav-link.active::after,
+.navbar .navbar-nav .nav-link[aria-current="page"]::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -11px;
+  height: 1px;
+  background: $ink;
 }
 
-.navbar .navbar-toggler {
-  border-color: rgba(226, 232, 240, 0.9);
+// Affiliation tag injected after nav
+.navbar-nav::after {
+  content: 'FGV EPGE · Rio de Janeiro';
+  font-family: $font-family-monospace;
+  font-size: 11.5px;
+  color: $ink-4;
+  letter-spacing: 0.04em;
+  margin-left: auto;
+  padding-left: 2rem;
+  align-self: center;
+  white-space: nowrap;
 }
 
-.navbar .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.2rem rgba(28, 47, 103, 0.15);
+@media (max-width: 991px) {
+  .navbar-nav::after { display: none; }
 }
 
-/* Fallback for browsers without backdrop-filter */
-@supports not ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
-  .navbar {
-    background-color: #ffffff !important;
-  }
-}
-
-// Dropdown menu styling (2026 clean academic)
+// Dropdown
 .dropdown-menu {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid $rule;
   border-radius: 6px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   padding: 0.25rem;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .dropdown-item {
   border-radius: 4px;
-  padding: 0.45rem 0.65rem;
-  font-weight: 600;
-  color: rgba(20, 36, 82, 0.86);
-  transition: background-color 160ms ease, color 160ms ease;
+  padding: 0.4rem 0.65rem;
+  font-weight: 400;
+  font-size: 13.5px;
+  color: $ink-3;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(20, 36, 82, 1);
+  background-color: $bg-2;
+  color: $ink;
 }
 
 .dropdown-item:active {
-  background-color: rgba(28, 47, 103, 0.10);
-  color: rgba(20, 36, 82, 1);
+  background-color: $accent-soft;
+  color: $accent;
 }
 
-// Section headings (Apple-style hierarchy: weight/size + slight negative tracking)
+// ---- headings ------------------------------------------------
 h1, h2, h3, h4 {
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
+  font-weight: 500;
+  color: $ink;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 2.25rem;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
   letter-spacing: -0.025em;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5rem;
   border-bottom: none;
   padding-bottom: 0;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
-// A/B: optional h2 underline (classic academic)
-@if $h2-underline == true {
-  h2 {
-    border-bottom: 2px solid $bg-accent;
-    padding-bottom: 0.3rem;
+// ---- home hero -----------------------------------------------
+.home-intro {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  grid-template-areas: "text photo";
+  gap: 4.5rem;
+  align-items: start;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $rule;
+}
+
+.home-intro .home-text {
+  grid-area: text;
+
+  p {
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: $ink-2;
+    max-width: 58ch;
+    margin: 0 0 1.1rem;
   }
 }
 
-// Publication/paper styling
-.publication {
-  margin-bottom: 1.5rem;
-  padding-left: 0;
-  line-height: 1.6;
-  
-  strong {
-    font-weight: 600;
-    color: $fgv-blue-dark;
-    font-size: 1.05rem;
+.home-intro .home-photo { grid-area: photo; }
+
+.profile-photo {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: none;
+  filter: grayscale(0.08) contrast(0.98);
+}
+
+@media (max-width: 768px) {
+  .home-intro {
+    grid-template-columns: 1fr;
+    grid-template-areas: "photo" "text";
+    gap: 1.5rem;
+  }
+  .home-intro .home-photo { justify-self: center; text-align: center; }
+  .home-intro .profile-photo { max-width: 240px; }
+}
+
+// ---- page head (publications, working papers) ---------------
+.page-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $rule;
+  margin-bottom: 0.5rem;
+}
+
+.eyebrow {
+  font-family: $font-family-monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: $ink-4;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+// ---- publications: year-grouped grid -------------------------
+.year-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid $rule;
+  align-items: start;
+}
+
+.year-row .year {
+  position: sticky;
+  top: 80px;
+  font-family: $font-family-monospace;
+  font-size: 13px;
+  color: $ink;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  p { margin: 0; }
+}
+
+.stack { display: flex; flex-direction: column; gap: 1.4rem; }
+
+.pub {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 2rem;
+  align-items: start;
+
+  .pub-body p {
+    margin: 0 0 0.4rem;
+    font-size: 15px;
     line-height: 1.5;
+    color: $ink-2;
   }
-  
-  em {
-    color: $text-muted;
+  .pub-body p:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: $ink;
+    letter-spacing: -0.005em;
   }
-  
-  a {
-    margin-right: 0.5rem;
-    font-size: 0.9rem;
-    white-space: nowrap;
+  .pub-body em {
+    font-style: normal;
+    font-family: $font-family-monospace;
+    font-size: 11.5px;
+    color: $ink-3;
+    letter-spacing: 0.01em;
   }
+  .pub-body a {
+    color: inherit;
+  }
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: $font-family-monospace;
+    font-size: 11px;
+  }
+  .actions p { margin: 0; display: flex; flex-direction: column; gap: 4px; }
+  .actions a {
+    color: $ink-3;
+    background-image: none;
+    padding: 2px 0;
+    letter-spacing: 0.02em;
+    display: block;
+    transition: color .2s;
+  }
+  .actions a:hover { color: $accent; }
 }
 
-// Publications page paragraph style
-#publications ~ p {
-  margin-bottom: 1.25rem;
-  line-height: 1.7;
-  text-align: left;
+// ---- working papers: paper grid ------------------------------
+.paper {
+  display: grid;
+  grid-template-columns: 80px 1fr 140px;
+  gap: 2rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid $rule;
+  align-items: start;
+  transition: background .25s;
+
+  .wp-tag {
+    font-family: $font-family-monospace;
+    font-size: 11px;
+    color: $ink-4;
+    letter-spacing: 0.04em;
+    padding-top: 3px;
+    p { margin: 0; }
+  }
+
+  .paper-body p {
+    margin: 0 0 0.5rem;
+  }
+  .paper-body p:first-child {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: $ink;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+  }
+  .paper-body p:first-child + p {
+    font-size: 13.5px;
+    color: $ink-3;
+  }
+  .paper-body a { color: inherit; }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: $font-family-monospace;
+    font-size: 11px;
+    color: $ink-3;
+    padding: 4px 8px;
+    background: $bg-2;
+    border: 1px solid $rule;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+    margin-top: 0.4rem;
+    font-style: normal;
+  }
+  .status::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $ink-4;
+    display: inline-block;
+  }
+  .status.rnr::before { background: #3d5a3d; }
+  .status.rev::before { background: #c76a2e; }
+  .status.wip::before { background: $ink-4; }
+
+  .status em, .status i {
+    font-style: normal;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: $font-family-monospace;
+    font-size: 11px;
+    padding-top: 3px;
+  }
+  .actions p { margin: 0; display: flex; flex-direction: column; gap: 6px; }
+  .actions a {
+    color: $ink-3;
+    background-image: none;
+    letter-spacing: 0.02em;
+    padding: 3px 0;
+    transition: color .2s;
+    display: block;
+  }
+  .actions a:hover { color: $accent; }
 }
 
-// CV-specific styling
+@media (max-width: 768px) {
+  .paper {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .year-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .year-row .year { position: static; }
+  .pub { grid-template-columns: 1fr; gap: 0.75rem; }
+}
+
+// ---- CV ------------------------------------------------------
 .cv-header {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid $bg-accent;
-  line-height: 1.8;
+  border-bottom: 1px solid $rule;
+  line-height: 1.7;
 }
 
-.cv-section {
-  margin-bottom: 2rem;
-}
+.cv-section { margin-bottom: 2rem; }
 
 .cv-entry {
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 1.5rem;
-  padding: 1rem 0;
-  margin-bottom: 0.25rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 0.9rem 0;
+  border-bottom: 1px solid $rule;
   align-items: start;
 }
 
 .cv-entry .year {
-  font-weight: 600;
-  color: $fgv-blue;
-  font-size: 0.95rem;
+  font-family: $font-family-monospace;
+  font-weight: 500;
+  color: $ink;
+  font-size: 13px;
+  letter-spacing: 0.02em;
   padding-top: 0.15rem;
 }
 
-// Contact info styling
+.cv-publications p {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+// ---- contact -------------------------------------------------
 .contact-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: $bg-light;
-  border-radius: 6px;
-  border-left: 3px solid $fgv-blue;
+  padding: 1.25rem 1.5rem;
+  background-color: $bg;
+  border-radius: 4px;
+  border-left: 2px solid $accent;
 }
 
-.contact-info > div {
-  line-height: 1.8;
-}
-
-// Profile links styling
 .profile-links {
   line-height: 2.2;
-  
-  a {
-    font-weight: 600;
-    font-size: 1.05rem;
-  }
-  
-  p {
-    margin-bottom: 1rem;
-  }
+  a { font-weight: 500; font-size: 1rem; }
+  p { margin-bottom: 1rem; }
 }
 
-// Modern icon-based profile links
 .profile-links-icons {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 2.25rem;
   margin: 2.5rem 0;
   flex-wrap: wrap;
-  
+
   .profile-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     text-align: center;
     text-decoration: none;
-    color: $fgv-blue;
-    transition: all 0.3s ease;
-    padding: 1.5rem 1.25rem;
-    border-radius: 8px;
-    background-color: $bg-light;
+    color: $ink-2;
+    padding: 1.3rem 1rem;
+    border-radius: 6px;
+    background-color: $bg;
+    border: 1px solid $rule;
     min-width: 110px;
-    
+    transition: border-color .2s ease, background-color .2s ease, color .2s ease;
+
     i {
-      margin-bottom: 0.75rem;
-      font-size: 3rem;
-      height: 3rem;
+      margin-bottom: 0.65rem;
+      font-size: 2.5rem;
+      height: 2.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: $ink-2;
     }
-    
+
     span {
-      font-size: 0.9rem;
-      font-weight: 600;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
     }
-    
+
     &:hover {
-      color: $fgv-blue-dark;
-      background-color: $bg-accent;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: $accent;
+      border-color: $rule-strong;
+      background-color: $bg-2;
+      transform: none;
+      box-shadow: none;
+      i { color: $accent; }
     }
   }
 }
 
 @media (max-width: 768px) {
-  .profile-links-icons {
-    gap: 1.5rem;
-  }
+  .profile-links-icons { gap: 1rem; }
+  .contact-info { grid-template-columns: 1fr; gap: 1rem; }
 }
 
-// CV Publications styling
-.cv-publications {
-  p {
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    
-    &:first-line {
-      font-weight: 600;
-    }
-  }
-}
-
-// Profile photo
-.profile-photo {
-  max-width: 220px;
-  width: 100%;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-// Download button
+// ---- buttons -------------------------------------------------
 .btn-download {
-  background-color: $fgv-blue;
-  color: white;
-  padding: 0.625rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.9rem;
+  background-color: $accent;
+  color: #fff;
+  padding: 0.55rem 1.25rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.875rem;
   letter-spacing: 0.01em;
   text-decoration: none;
   display: inline-block;
   margin-top: 1rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
-  
+  box-shadow: none;
+  transition: background-color .2s ease;
+
   &:hover {
-    background-color: $fgv-blue-dark;
-    color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
-    transform: translateY(-1px);
+    background-color: darken($accent, 6%);
+    color: #fff;
+    box-shadow: none;
+    transform: none;
   }
 }
 
-// Responsive adjustments
-@media (max-width: 768px) {
-  .cv-entry {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-  }
-  
-  .cv-entry .year {
-    font-size: 0.9rem;
-  }
-  
-  .contact-info {
-    flex-direction: column;
-    gap: 1rem;
-  }
+// ---- footer --------------------------------------------------
+.page-footer, .nav-footer {
+  background: $bg !important;
+  border-top: 1px solid $rule;
+  color: $ink-4;
+  font-family: $font-family-monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: 1.25rem 0 2rem;
+  margin-top: 3rem;
+
+  a { color: $ink-3; background-image: none; }
+  a:hover { color: $accent; }
 }
 
-// Print styles for CV
+// ---- print ---------------------------------------------------
 @media print {
-  .navbar, .page-footer, .btn-download {
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .navbar, .page-footer, .nav-footer, .btn-download {
     display: none !important;
   }
-  
-  body {
-    font-size: 11pt;
+  main, main.content {
+    background: #fff !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    box-shadow: none !important;
   }
+  a {
+    background-image: none !important;
+    color: #000 !important;
+  }
+  body { font-size: 11pt; }
 }
