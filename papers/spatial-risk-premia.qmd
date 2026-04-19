@@ -7,7 +7,6 @@ author:
     affiliation: FGV EPGE
   - name: Ana Paula Ruhe
     affiliation: FGV EPGE
-date: "2026"
 
 # Google Scholar metadata - CRITICAL for indexing
 format:
