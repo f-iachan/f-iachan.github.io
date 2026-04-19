@@ -29,20 +29,9 @@ page-layout: article
 toc: false
 ---
 
-## Abstract
-
-We study the distributional effects of monetary policy in a developing economy with extensive employment informality. In particular, we examine how monetary policy impacts labor income growth and employment transitions using micro-level panel data. Adopting high-frequency identification, we construct a series of monetary policy surprises for Brazil that serves as an external instrument in a proxy-SVAR, thus allowing us to recover monetary policy shocks. Following a monetary contraction, both formal and informal workers experience declines in real income, with effects that are similarly pronounced across the low and middle-income quartiles, while higher earners suffer less. A monetary contraction also reduces the likelihood of large income gains, shifting the income growth distribution leftward. Moreover, a shock that raises the interest rate increases informality and unemployment persistence by making transitions to formal employment less frequent.
-
 [Download PDF](../working_papers/Monetary_Policy_and_Heterogeneity.pdf){.btn-download}
 
 ## Status
 
 **Revised and Resubmitted**, *Journal of Money, Credit, and Banking*
-
-## Authors
-
-- **Diego B. P. Gomes** (International Monetary Fund)
-- **Felipe S. Iachan** (FGV EPGE)
-- **Ana Paula Ruhe** (FGV EPGE)
-- **Cezar Santos** (FGV EPGE)
 

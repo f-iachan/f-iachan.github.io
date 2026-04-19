@@ -28,9 +28,3 @@ toc: false
 *Work in Progress*. Draft and slides available upon request.
 
 > **Former title:** "Urban growth risk and prices: A dynamic spatial theory"
-
-## Authors
-
-- **Leandro Gorno** ([website](https://sites.google.com/site/leandrogorno/))
-- **Felipe S. Iachan** (FGV EPGE)
-- **Ana Paula Ruhe** ([website](https://sites.google.com/view/anapaularuhe/home))
