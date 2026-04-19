@@ -305,7 +305,9 @@ h3 {
   margin: 0 auto;
 }
 
-.quarto-title-block.default {
+// Scope title-block chrome to paper pages only (they uniquely have
+// .quarto-title-meta-author). Other pages keep their tight default.
+.quarto-title-block.default:has(.quarto-title-meta-author) {
   padding-bottom: 1.75rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid $rule;
