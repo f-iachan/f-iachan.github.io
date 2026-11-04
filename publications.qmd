@@ -16,8 +16,8 @@ toc: false
 *Regional Science and Urban Economics*, 99 (2023), 103875.
 :::
 :::{.actions}
-[pdf ↓](papers/Housing_Supply_in_the_Presence_of_Informality.pdf)
-[journal ↗](https://doi.org/10.1016/j.regsciurbeco.2023.103875)
+[PDF](papers/Housing_Supply_in_the_Presence_of_Informality.pdf)
+[Journal](https://doi.org/10.1016/j.regsciurbeco.2023.103875)
 :::
 :::
 :::
@@ -30,13 +30,13 @@ toc: false
 :::{.stack}
 :::{.pub}
 :::{.pub-body}
-"Underdiversification and idiosyncratic risk externalities", joint with [Dejanir Silva](https://sites.google.com/site/dejanirhsilva/) and [Chao Zi](https://czi.finance).
+"Under-diversification and idiosyncratic risk externalities", joint with [Dejanir Silva](https://sites.google.com/site/dejanirhsilva/) and [Chao Zi](https://czi.finance).
 
 *Journal of Financial Economics*, 143(3) (2022), 1227-1250.
 :::
 :::{.actions}
-[pdf ↓](papers/IdRiskExternalities.pdf)
-[journal ↗](https://doi.org/10.1016/j.jfineco.2021.05.001)
+[PDF](papers/IdRiskExternalities.pdf)
+[Journal](https://doi.org/10.1016/j.jfineco.2021.05.001)
 :::
 :::
 :::
@@ -54,8 +54,8 @@ toc: false
 *Journal of Economic Behavior and Organization*, 191 (2021), 538-554.
 :::
 :::{.actions}
-[pdf ↓](papers/globalgamesexperiments.pdf)
-[journal ↗](https://doi.org/10.1016/j.jebo.2021.08.036)
+[PDF](papers/globalgamesexperiments.pdf)
+[Journal](https://doi.org/10.1016/j.jebo.2021.08.036)
 :::
 :::
 
@@ -66,8 +66,8 @@ toc: false
 *American Economic Journal: Macroeconomics*, 13(2) (2021), 333-72.
 :::
 :::{.actions}
-[pdf ↓](papers/financialInnovationSaving_AEJ_unformatted_SciWord.pdf)
-[journal ↗](https://doi.org/10.1257/mac.20180429)
+[PDF](papers/financialInnovationSaving_AEJ_unformatted_SciWord.pdf)
+[Journal](https://doi.org/10.1257/mac.20180429)
 :::
 :::
 :::
@@ -85,8 +85,8 @@ toc: false
 *Journal of Economic Dynamics and Control*, 113 (2020), 103854.
 :::
 :::{.actions}
-[pdf ↓](papers/EarningsInformality.pdf)
-[journal ↗](https://doi.org/10.1016/j.jedc.2020.103854)
+[PDF](papers/EarningsInformality.pdf)
+[Journal](https://doi.org/10.1016/j.jedc.2020.103854)
 :::
 :::
 
@@ -97,8 +97,8 @@ toc: false
 *Journal of Economic Theory*, 185 (2020), 104945.
 :::
 :::{.actions}
-[pdf ↓](papers/CompRealOptions.pdf)
-[journal ↗](https://doi.org/10.1016/j.jet.2019.104945)
+[PDF](papers/CompRealOptions.pdf)
+[Journal](https://doi.org/10.1016/j.jet.2019.104945)
 :::
 :::
 
@@ -109,8 +109,8 @@ toc: false
 *Management Science*, 66(9) (2020), 4292-4314.
 :::
 :::{.actions}
-[pdf ↓](papers/CapBudCredConst.pdf)
-[journal ↗](https://doi.org/10.1287/mnsc.2019.3369)
+[PDF](papers/CapBudCredConst.pdf)
+[Journal](https://doi.org/10.1287/mnsc.2019.3369)
 :::
 :::
 :::
@@ -123,13 +123,13 @@ toc: false
 :::{.stack}
 :::{.pub}
 :::{.pub-body}
-"Homicides and the age of criminal responsibility in Brazil: a regression discontinuity approach", joint with [F. Costa](https://sites.google.com/site/fjmcosta/), J. Faria, and B. Caballero.
+"Homicides and the age of criminal responsibility: a density discontinuity approach", joint with [F. Costa](https://sites.google.com/site/fjmcosta/), J. Faria, and B. Caballero.
 
 *Economía, the Journal of LACEA*, 19(1) (2018), 59-92.
 :::
 :::{.actions}
-[pdf ↓](papers/CCFI_2018Mar_final.pdf)
-[journal ↗](https://doi.org/10.1353/eco.2018.0008)
+[PDF](papers/CCFI_2018Mar_final.pdf)
+[Journal](https://doi.org/10.1353/eco.2018.0008)
 :::
 :::
 :::
@@ -147,8 +147,8 @@ toc: false
 *Journal of Economic Theory*, 158 (2015), 739-768.
 :::
 :::{.actions}
-[pdf ↓](papers/InfoQualRegChang.pdf)
-[journal ↗](https://doi.org/10.1016/j.jet.2014.03.005)
+[PDF](papers/InfoQualRegChang.pdf)
+[Journal](https://doi.org/10.1016/j.jet.2014.03.005)
 :::
 :::
 :::

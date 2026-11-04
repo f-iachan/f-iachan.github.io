@@ -8,7 +8,7 @@ $bg-2:        #ebe7db;
 $ink:         #1a1814;
 $ink-2:       #2d2a24;
 $ink-3:       #65615a;
-$ink-4:       #9a958a;
+$ink-4:       #736e65;
 $rule:        #ddd8ca;
 $rule-strong: #ccc6b4;
 $accent:      #1e3a5f;
@@ -164,8 +164,7 @@ main a,
 // Affiliation tag injected after nav
 .navbar-nav::after {
   content: 'FGV EPGE · Rio de Janeiro';
-  font-family: $font-family-monospace;
-  font-size: 11.5px;
+  font-size: 13px;
   color: $ink-4;
   letter-spacing: 0.04em;
   margin-left: auto;
@@ -288,8 +287,7 @@ h3 {
 }
 
 .eyebrow {
-  font-family: $font-family-monospace;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.08em;
   color: $ink-4;
   text-transform: uppercase;
@@ -327,8 +325,7 @@ h3 {
     grid-template-columns: max-content 1fr;
     gap: 0.35rem 1.25rem;
     margin: 0 0 1rem;
-    font-family: $font-family-monospace;
-    font-size: 11.5px;
+    font-size: 13px;
     color: $ink-3;
     letter-spacing: 0.02em;
 
@@ -348,8 +345,7 @@ h3 {
     border-top: 1px solid $rule;
 
     .block-title {
-      font-family: $font-family-monospace;
-      font-size: 11px;
+      font-size: 13px;
       letter-spacing: 0.08em;
       color: $ink-4;
       text-transform: uppercase;
@@ -378,7 +374,6 @@ h3 {
 .year-row .year {
   position: sticky;
   top: 80px;
-  font-family: $font-family-monospace;
   font-size: 13px;
   color: $ink;
   letter-spacing: 0.02em;
@@ -391,7 +386,7 @@ h3 {
 
 .pub {
   display: grid;
-  grid-template-columns: 1fr 120px;
+  grid-template-columns: 1fr 90px;
   gap: 2rem;
   align-items: start;
 
@@ -409,11 +404,8 @@ h3 {
     letter-spacing: -0.005em;
   }
   .pub-body em {
-    font-style: normal;
-    font-family: $font-family-monospace;
-    font-size: 11.5px;
-    color: $ink-3;
-    letter-spacing: 0.01em;
+    font-style: italic;
+    color: $ink-2;
   }
   .pub-body a {
     color: inherit;
@@ -422,13 +414,14 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    font-family: $font-family-monospace;
-    font-size: 11px;
+    font-size: 13px;
   }
   .actions p { margin: 0; display: flex; flex-direction: column; gap: 4px; }
   .actions a {
-    color: $ink-3;
+    color: $ink-2;
     background-image: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
     padding: 2px 0;
     letter-spacing: 0.02em;
     display: block;
@@ -440,21 +433,12 @@ h3 {
 // ---- working papers: paper grid ------------------------------
 .paper {
   display: grid;
-  grid-template-columns: 80px 1fr 140px;
+  grid-template-columns: 1fr 90px;
   gap: 2rem;
   padding: 1.75rem 0;
   border-bottom: 1px solid $rule;
   align-items: start;
   transition: background .25s;
-
-  .wp-tag {
-    font-family: $font-family-monospace;
-    font-size: 11px;
-    color: $ink-4;
-    letter-spacing: 0.04em;
-    padding-top: 3px;
-    p { margin: 0; }
-  }
 
   .paper-body p {
     margin: 0 0 0.5rem;
@@ -474,35 +458,15 @@ h3 {
   .paper-body a { color: inherit; }
 
   .status {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-family: $font-family-monospace;
-    font-size: 11px;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
     color: $ink-3;
-    padding: 4px 8px;
-    background: $bg-2;
-    border: 1px solid $rule;
-    border-radius: 3px;
-    letter-spacing: 0.02em;
-    margin-top: 0.4rem;
-    font-style: normal;
+    margin-top: 0.25rem;
   }
-  .status::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: $ink-4;
-    display: inline-block;
-  }
-  .status.rnr::before { background: #3d5a3d; }
-  .status.rev::before { background: #c76a2e; }
-  .status.wip::before { background: $ink-4; }
 
   .status em, .status i {
-    font-style: normal;
-    font-family: inherit;
+    font-style: inherit;
     font-weight: inherit;
     color: inherit;
   }
@@ -511,14 +475,15 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    font-family: $font-family-monospace;
-    font-size: 11px;
+    font-size: 13px;
     padding-top: 3px;
   }
   .actions p { margin: 0; display: flex; flex-direction: column; gap: 6px; }
   .actions a {
-    color: $ink-3;
+    color: $ink-2;
     background-image: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
     letter-spacing: 0.02em;
     padding: 3px 0;
     transition: color .2s;
@@ -538,6 +503,16 @@ h3 {
   }
   .year-row .year { position: static; }
   .pub { grid-template-columns: 1fr; gap: 0.75rem; }
+  .paper .actions p, .pub .actions p { flex-direction: row; gap: 1.25rem; }
+}
+
+// ---- page titles ---------------------------------------------
+#title-block-header { padding-top: 1.25rem; }
+
+@media (max-width: 768px) {
+  h1, h1.title { font-size: clamp(28px, 8vw, 40px); }
+  // The name is already the page title on the home page
+  body.home .navbar-brand { visibility: hidden; }
 }
 
 // ---- CV ------------------------------------------------------
@@ -560,7 +535,6 @@ h3 {
 }
 
 .cv-entry .year {
-  font-family: $font-family-monospace;
   font-weight: 500;
   color: $ink;
   font-size: 13px;
@@ -650,8 +624,7 @@ h3 {
   display: inline-block;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
-  font-family: $font-family-monospace;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   color: $ink-2;
   background: transparent;
@@ -683,8 +656,7 @@ h3 {
   background: $bg !important;
   border-top: 1px solid $rule;
   color: $ink-4;
-  font-family: $font-family-monospace;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   padding: 1.25rem 0 2rem;
   margin-top: 3rem;

@@ -11,11 +11,12 @@ project:
     - "!AGENT_QUICK_START.md"
     - "!DEPLOYMENT.md"
     - "!README.md"
+    - "!papers/minwage-template.qmd"
 
 website:
   google-analytics: "G-N5FDW9G7BT"
   title: "Felipe S. Iachan"
-  description: "Associate Professor of Economics, FGV EPGE"
+  description: "Associate Professor of Economics and Finance, FGV EPGE"
   favicon: assets/favicon.svg
   
   navbar:

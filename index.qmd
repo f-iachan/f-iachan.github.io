@@ -1,5 +1,6 @@
 ---
 title: "Felipe S. Iachan"
+body-classes: home
 page-layout: article
 toc: false
 ---
@@ -7,7 +8,7 @@ toc: false
 ::: {.home-intro}
 
 ::: {.home-text}
-I am an Associate Professor of Economics at [FGV EPGE](https://epge.fgv.br). I hold a PhD in Economics from [MIT](https://economics.mit.edu), obtained in 2012. 
+I am an Associate Professor of Economics and Finance at [FGV EPGE](https://epge.fgv.br). I hold a PhD in Economics from [MIT](https://economics.mit.edu), obtained in 2012. 
 
 My research examines how financial, informational, and institutional frictions influence the macroeconomy and asset prices.
 
