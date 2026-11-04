@@ -161,22 +161,6 @@ main a,
   background: $ink;
 }
 
-// Affiliation tag injected after nav
-.navbar-nav::after {
-  content: 'FGV EPGE · Rio de Janeiro';
-  font-size: 13px;
-  color: $ink-4;
-  letter-spacing: 0.04em;
-  margin-left: auto;
-  padding-left: 2rem;
-  align-self: center;
-  white-space: nowrap;
-}
-
-@media (max-width: 991px) {
-  .navbar-nav::after { display: none; }
-}
-
 // Dropdown
 .dropdown-menu {
   border: 1px solid $rule;
@@ -234,46 +218,102 @@ h3 {
 }
 
 // ---- home hero -----------------------------------------------
-.home-intro {
-  display: grid;
-  grid-template-columns: 1fr 220px;
-  grid-template-areas: "text photo";
-  gap: 4.5rem;
-  align-items: start;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid $rule;
+// The page fills the viewport: name, text and portrait share one centered
+// block aligned with the navbar edges, and the footer sits at the bottom.
+body.home {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+  #quarto-content {
+    display: flex;
+    flex: 1 0 auto;
+    width: 100%;
+    justify-content: center;
+    padding: 2.5rem 0;
+  }
+
+  // Quarto places the title outside .home-intro, so main holds the grid
+  main.content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(240px, 30vw, 360px);
+    grid-template-rows: 1fr auto auto 1fr;
+    column-gap: clamp(3rem, 7vw, 6.5rem);
+    width: min(1018px, 100% - 3rem);
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #title-block-header {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 0 1.5rem;
+    padding: 0;
+  }
+
+  h1.title {
+    margin: 0;
+    font-size: clamp(40px, 4.5vw, 56px);
+  }
+
+  .nav-footer { margin-top: 0; padding-top: 1rem; padding-bottom: 1rem; }
+
+  // The name is the page's headline, so the navbar doesn't repeat it
+  .navbar-brand { visibility: hidden; }
 }
+
+.home-intro { display: contents; }
 
 .home-intro .home-text {
-  grid-area: text;
+  grid-column: 1;
+  grid-row: 3;
 
   p {
-    font-size: 15.5px;
-    line-height: 1.65;
+    font-size: 17px;
+    line-height: 1.6;
     color: $ink-2;
-    max-width: 58ch;
+    max-width: 60ch;
     margin: 0 0 1.1rem;
   }
+
+  p:last-child { margin-bottom: 0; }
 }
 
-.home-intro .home-photo { grid-area: photo; }
+.home-intro .home-photo {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  align-self: center;
+
+  p { margin: 0; }
+}
 
 .profile-photo {
-  max-width: 220px;
+  display: block;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: none;
   filter: grayscale(0.08) contrast(0.98);
 }
 
 @media (max-width: 768px) {
-  .home-intro {
-    grid-template-columns: 1fr;
-    grid-template-areas: "photo" "text";
-    gap: 1.5rem;
+  body.home #quarto-content { padding: 1.5rem 0 2.5rem; }
+  body.home main.content {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    align-content: start;
   }
-  .home-intro .home-photo { justify-self: center; text-align: center; }
-  .home-intro .profile-photo { max-width: 240px; }
+  body.home #title-block-header { margin-bottom: 1rem; }
+  body.home h1.title { font-size: clamp(28px, 8vw, 40px); }
+
+  .home-intro .home-photo {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 1.5rem;
+  }
+  .home-intro .home-text p { font-size: 16px; }
+  .home-intro .profile-photo { width: 160px; }
 }
 
 // ---- page head (publications, working papers) ---------------
@@ -511,8 +551,6 @@ h3 {
 
 @media (max-width: 768px) {
   h1, h1.title { font-size: clamp(28px, 8vw, 40px); }
-  // The name is already the page title on the home page
-  body.home .navbar-brand { visibility: hidden; }
 }
 
 // ---- CV ------------------------------------------------------
@@ -663,6 +701,22 @@ h3 {
 
   a { color: $ink-3; background-image: none; }
   a:hover { color: $accent; }
+}
+
+// Quarto sets side padding with a more specific selector
+footer.footer .nav-footer {
+  padding-left: max(1.5rem, calc((100% - 1018px) / 2));
+  padding-right: max(1.5rem, calc((100% - 1018px) / 2));
+}
+
+.nav-footer-center { display: none; }
+.nav-footer-right .footer-items .nav-link { padding-right: 0; }
+
+@media (max-width: 768px) {
+  .nav-footer-left, .nav-footer-right {
+    flex: 0 1 auto;
+    margin-bottom: 0;
+  }
 }
 
 // ---- print ---------------------------------------------------
