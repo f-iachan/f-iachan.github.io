@@ -11,7 +11,7 @@ This guide helps AI agents (or humans) create landing pages for working papers o
 
 Before creating a landing page, you need:
 
-1. **PDF file** of the working paper (placed in `/working_papers/` directory)
+1. **PDF file** of the working paper (placed in `/papers/` directory)
 2. **Paper metadata**:
    - Full title
    - All author names and affiliations
@@ -21,7 +21,7 @@ Before creating a landing page, you need:
 
 **Repo conventions (this site):**
 - **Published-paper PDFs** live in `/papers/` and are linked from `publications.qmd`
-- **Working-paper PDFs** live in `/working_papers/` and are linked from `working-papers.qmd`
+- **Working-paper PDFs** live in `/papers/` and are linked from `working-papers.qmd`
 - **Working-paper landing pages** live in `/papers/*.qmd` (these carry Google Scholar `citation_*` meta tags)
 
 ## Step-by-Step Process
@@ -73,7 +73,7 @@ format:
         <meta name="citation_author" content="LASTNAME2, FIRSTNAME2">
         <!-- Add one citation_author line per author -->
         <meta name="citation_publication_date" content="YYYY">
-        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/working_papers/ACTUAL_PDF_FILENAME.pdf">
+        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/papers/ACTUAL_PDF_FILENAME.pdf">
 
 page-layout: article
 toc: false
@@ -83,7 +83,7 @@ toc: false
 
 COPY YOUR ABSTRACT HERE (same as above, for display).
 
-[Download PDF](../working_papers/ACTUAL_PDF_FILENAME.pdf){.btn-download}
+[Download PDF](ACTUAL_PDF_FILENAME.pdf){.btn-download}
 
 ## Status
 
@@ -107,15 +107,15 @@ COPY YOUR ABSTRACT HERE (same as above, for display).
 3. **citation_publication_date**: Use YYYY format for working papers
 4. **citation_pdf_url**: Full URL to the PDF on your deployed site
    - Replace `felipeiachan.github.io` with your actual domain
-   - Must match the actual PDF filename in `/working_papers/`
+   - Must match the actual PDF filename in `/papers/`
 
 #### PDF Link:
 
-The download button link should use **relative path**: `../working_papers/FILENAME.pdf`
+The download button link should use **relative path**: `FILENAME.pdf`
 
 This works because:
 - Landing page is at `/papers/slug.qmd`
-- PDF is at `/working_papers/filename.pdf`
+- PDF is at `/papers/filename.pdf`
 - `..` goes up one level from `/papers/` to root
 
 ### Step 5: Update the Working Papers Index
@@ -124,12 +124,12 @@ Edit `/working-papers.qmd` to add a link to your new landing page:
 
 **Format:**
 ```markdown
-"Paper Title", joint with Coauthor Names. *Status Information*. [[page](papers/your-slug.qmd), [pdf](working_papers/FILENAME.pdf)]
+"Paper Title", joint with Coauthor Names. *Status Information*. [[page](papers/your-slug.qmd), [pdf](papers/FILENAME.pdf)]
 ```
 
 **Example:**
 ```markdown
-"Minimum wages, Inequality, and the Informal Sector", joint with Luiz Brotherhood and Rafael Machado Parente. *Revised and resubmitted, American Economic Review*. [[page](papers/minwage-inequality.qmd), [pdf](working_papers/Minw_Ineq_Inf.pdf)]
+"Minimum wages, Inequality, and the Informal Sector", joint with Luiz Brotherhood and Rafael Machado Parente. *Revised and resubmitted, American Economic Review*. [[page](papers/minwage-inequality.qmd), [pdf](papers/Minw_Ineq_Inf.pdf)]
 ```
 
 ### Step 6: Test the Page
@@ -157,9 +157,9 @@ The template in this document is intentionally minimal; the live examples above 
 **Problem:** Clicked download button but PDF doesn't load.
 
 **Solutions:**
-1. Check the PDF exists in `/working_papers/` directory
+1. Check the PDF exists in `/papers/` directory
 2. Verify filename matches exactly (case-sensitive!)
-3. Check relative path: from `/papers/` you need `../working_papers/file.pdf`
+3. Check relative path: from `/papers/` you need `file.pdf`
 
 ### Issue: Google Scholar Not Indexing
 
@@ -191,7 +191,7 @@ website/
 │   ├── minwage-inequality.qmd          # Landing page
 │   ├── ibes-market-returns.qmd         # Landing page
 │   └── monetary-policy-heterogeneity.qmd  # Landing page
-├── working_papers/
+├── papers/
 │   ├── Minw_Ineq_Inf.pdf              # Actual PDF
 │   ├── IBES_and_Market_Returns.pdf    # Actual PDF
 │   └── Monetary_Policy_and_Heterogeneity.pdf  # Actual PDF
@@ -219,7 +219,7 @@ website/
 When asked to "add a working paper" or "create a landing page for [paper]":
 
 1. **Ask for missing information** if not provided:
-   - PDF filename (in `/working_papers/`)
+   - PDF filename (in `/papers/`)
    - Full author list with affiliations
    - Abstract or brief description
    - Current status (R&R, under review, working paper, etc.)

@@ -12,6 +12,9 @@ project:
     - "!DEPLOYMENT.md"
     - "!README.md"
     - "!papers/minwage-template.qmd"
+  # Old PDF addresses stay live; GitHub Pages cannot redirect them
+  resources:
+    - "/working_papers/*.pdf"
 
 website:
   google-analytics: "G-N5FDW9G7BT"

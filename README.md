@@ -113,7 +113,7 @@ with Coauthor Name
 For Scholar indexing, create a dedicated page for each working paper:
 1. Copy `papers/minwage-template.qmd`
 2. Fill in the metadata (especially `citation_*` meta tags)
-3. Put the PDF in `working_papers/`
+3. Put the PDF in `papers/`, next to its landing page (Google Scholar requires the same folder)
 4. Link from `working-papers.qmd`
 
 ## Google Scholar Indexing

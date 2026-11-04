@@ -28,7 +28,7 @@ format:
         <meta name="citation_title" content="PAPER TITLE">
         <meta name="citation_author" content="LASTNAME, FIRSTNAME">
         <meta name="citation_publication_date" content="YYYY">
-        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/working_papers/FILE.pdf">
+        <meta name="citation_pdf_url" content="https://felipeiachan.github.io/papers/FILE.pdf">
 
 page-layout: article
 toc: false
@@ -38,7 +38,7 @@ toc: false
 
 ABSTRACT TEXT HERE
 
-[Download PDF](../working_papers/FILE.pdf){.btn-download}
+[Download PDF](FILE.pdf){.btn-download}
 
 ## Status
 
@@ -54,16 +54,16 @@ ABSTRACT TEXT HERE
 Add to `/working-papers.qmd`:
 
 ```markdown
-"Paper Title", joint with Coauthors. *Status*. [[page](papers/slug.qmd), [pdf](working_papers/FILE.pdf)]
+"Paper Title", joint with Coauthors. *Status*. [[page](papers/slug.qmd), [pdf](papers/FILE.pdf)]
 ```
 
 ## Critical Points
 
 1. **citation_pdf_url**: Must be full URL with actual deployed domain
-2. **PDF relative path**: Use `../working_papers/file.pdf` from landing page
+2. **PDF relative path**: Use `file.pdf` from landing page
 3. **citation_author**: Format as "Lastname, Firstname" (one per author)
 4. **Slug**: lowercase-with-hyphens, descriptive but short
-5. **Repo convention**: working paper PDFs go in `/working_papers/`; landing pages go in `/papers/`; the index is `working-papers.qmd`
+5. **Repo convention**: working paper PDFs go in `/papers/`; landing pages go in `/papers/`; the index is `working-papers.qmd`
 
 ## See Also
 

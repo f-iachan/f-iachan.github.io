@@ -7,12 +7,10 @@ toc: false
 :::{.paper}
 :::{.paper-body}
 "Minimum wages, Inequality, and the Informal Sector", joint with [Rafael Machado Parente](https://www.rparente.com) and [Luiz Brotherhood](https://sites.google.com/site/luizbrotherhood/).
-
-[*Revised version soon*]{.status .wip}
 :::
 :::{.actions}
 [Page](papers/minwage-inequality.qmd)
-[PDF](working_papers/Minw_Ineq_Inf.pdf)
+[PDF](papers/Minw_Ineq_Inf.pdf)
 :::
 :::
 
@@ -24,7 +22,7 @@ toc: false
 :::
 :::{.actions}
 [Page](papers/ibes-market-returns.qmd)
-[PDF](working_papers/IBES_and_Market_Returns.pdf)
+[PDF](papers/IBES_and_Market_Returns.pdf)
 :::
 :::
 
@@ -36,7 +34,7 @@ toc: false
 :::
 :::{.actions}
 [Page](papers/monetary-policy-heterogeneity.qmd)
-[PDF](working_papers/Monetary_Policy_and_Heterogeneity.pdf)
+[PDF](papers/Monetary_Policy_and_Heterogeneity.pdf)
 :::
 :::
 
