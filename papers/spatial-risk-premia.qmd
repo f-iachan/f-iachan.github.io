@@ -1,12 +1,16 @@
 ---
 title: "Spatial Risk Premia in Residential Real Estate"
 author: 
-  - name: Leandro Gorno
-    affiliation: Universidad de los Andes
   - name: Felipe S. Iachan
     affiliation: FGV EPGE
-  - name: Ana Paula Ruhe
+  - name: Leandro Gorno
     affiliation: FGV EPGE
+    url: https://sites.google.com/site/leandrogorno/
+  - name: Ana Paula Ruhe
+    affiliation: FEA USP
+    url: https://sites.google.com/view/anapaularuhe/home
+abstract: |
+  Real estate returns differ systematically across locations. Within cities, cheaper or more distant units earn higher returns, and across cities, returns rise with exposure to aggregate risk. We analyze these patterns with a dynamic urban economy model. Rents inherit the risk of local economic conditions, which move with aggregate shocks, and investors price that risk. Because rents fall with distance from the employment center while operating costs fall less, distant, low-rent locations have thinner margins and greater exposure. Expected growth moves return between yields and appreciation, so risk premia can be measured only from total returns. Most housing data report one component but not both. We assess the model with NCREIF multifamily data, which report both return components and operating costs. A portfolio long high-beta and short low-beta cities earns 0.39 percentage points per quarter (s.e. 0.14). Within cities, excess returns rise by 2.31 basis points per quarter for each mile from the employment center (s.e. 0.81). Operating costs excluding property taxes rise with rents at an elasticity of 0.80 (s.e. 0.04). A calibration with a fixed non-tax cost matches the income-return profile across distance quartiles and implies that the higher cap rates of distant locations compensate for risk rather than low expected growth.
 
 # Google Scholar metadata - CRITICAL for indexing
 format:
@@ -14,17 +18,18 @@ format:
     include-in-header:
       text: |
         <meta name="citation_title" content="Spatial Risk Premia in Residential Real Estate">
-        <meta name="citation_author" content="Gorno, Leandro">
         <meta name="citation_author" content="Iachan, Felipe S.">
+        <meta name="citation_author" content="Gorno, Leandro">
         <meta name="citation_author" content="Ruhe, Ana Paula">
-        <meta name="citation_publication_date" content="2026">
+        <meta name="citation_publication_date" content="2026/11">
+        <meta name="citation_pdf_url" content="https://f-iachan.github.io/papers/Spatial_Risk_Premia.pdf">
 
 page-layout: article
 toc: false
 ---
 
-## Status
+[Download PDF](Spatial_Risk_Premia.pdf){.btn-download}
 
-*Work in Progress*. Draft and slides available upon request.
+Slides available upon request.
 
 > **Former title:** "Urban growth risk and prices: A dynamic spatial theory"

@@ -6,7 +6,7 @@ author:
   - name: Felipe S. Iachan
     affiliation: FGV EPGE
   - name: Ana Paula Ruhe
-    affiliation: FGV EPGE
+    affiliation: FEA USP
   - name: Cezar Santos
     affiliation: FGV EPGE
 abstract: |

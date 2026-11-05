@@ -41,11 +41,10 @@ toc: false
 :::{.paper}
 :::{.paper-body}
 "Spatial risk premia in residential real estate", joint with [Leandro Gorno](https://sites.google.com/site/leandrogorno/) and [Ana Paula Ruhe](https://sites.google.com/view/anapaularuhe/home).
-
-[*Work in Progress*]{.status .wip}
 :::
 :::{.actions}
 [Page](papers/spatial-risk-premia.qmd)
+[PDF](papers/Spatial_Risk_Premia.pdf)
 :::
 :::
 
