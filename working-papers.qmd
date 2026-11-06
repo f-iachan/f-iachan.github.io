@@ -16,9 +16,9 @@ toc: false
 
 :::{.paper}
 :::{.paper-body}
-"Subjective beliefs, disagreement, and market return predictability", joint with [Raul Riva](https://rgriva.github.io).
+"Analyst expectations provide no incremental return predictability beyond valuation", joint with [Raul Riva](https://rgriva.github.io).
 
-[*Revision requested, Critical Finance Review*]{.status .rev}
+[*Revised and resubmitted, Critical Finance Review*]{.status .rnr}
 :::
 :::{.actions}
 [Page](papers/ibes-market-returns.qmd)

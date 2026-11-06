@@ -1,22 +1,22 @@
 ---
-title: "Subjective Beliefs, Disagreement, and Market Return Predictability"
+title: "Analyst Expectations Provide No Incremental Return Predictability Beyond Valuation"
 author: 
   - name: Felipe S. Iachan
     affiliation: FGV EPGE
   - name: Raul Riva
     affiliation: Northwestern University
 abstract: |
-  We jointly evaluate the ability of consensus beliefs about long-term earnings growth and analyst disagreement to predict stock market returns. We bridge the gap between the strands of literature testing theories of belief extrapolation and disagreement-fueled over-pricing. Using I/B/E/S analyst forecast data from 1981 up to 2022 and conducting both in-sample and out-of-sample analyses, we find limited evidence that these measures of subjective beliefs predict returns. Our analyses across specifications and sample periods highlight the fragility of prior findings to the inclusion of relevant controls or the extension of sample periods.
+  Consensus long-term growth forecasts (LTG) and analyst disagreement do not robustly predict aggregate market returns. Three findings support this conclusion. First, LTG survives conditioning on the spot price-earnings ratio—the control used in recent work on overpricing—but both LTG and disagreement become insignificant once the cyclically adjusted price-earnings ratio (CAPE) is substituted. Second, the LTG–return relationship is unstable across subperiods: coefficients change sign, and the post-2008 regime differs markedly from the pre-crisis period. Third, recursive out-of-sample forecasts across multiple start dates and horizons confirm that neither variable delivers reliable predictive performance. Together, these findings challenge the claim that subjective beliefs retain incremental predictive power beyond valuation ratios: their apparent significance is subsumed by an adequate valuation control, is unstable across subperiods, and is absent out of sample.
 
 # Google Scholar metadata - CRITICAL for indexing
 format:
   html:
     include-in-header:
       text: |
-        <meta name="citation_title" content="Subjective Beliefs, Disagreement, and Market Return Predictability">
+        <meta name="citation_title" content="Analyst Expectations Provide No Incremental Return Predictability Beyond Valuation">
         <meta name="citation_author" content="Iachan, Felipe S.">
         <meta name="citation_author" content="Riva, Raul">
-        <meta name="citation_publication_date" content="2024">
+        <meta name="citation_publication_date" content="2026/02">
         <meta name="citation_pdf_url" content="https://f-iachan.github.io/papers/IBES_and_Market_Returns.pdf">
 
 page-layout: article
@@ -27,5 +27,7 @@ toc: false
 
 ## Status
 
-**Revision Requested**, *Critical Finance Review*
+**Revised and Resubmitted**, *Critical Finance Review*
+
+Previously circulated as "Subjective beliefs, disagreement, and market return predictability."
 

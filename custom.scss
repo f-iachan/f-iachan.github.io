@@ -511,6 +511,20 @@ body.home {
     color: inherit;
   }
 
+  // Colored dot before the status: amber = revision requested, green = R&R
+  .status::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $ink-4;
+    margin-right: 0.55rem;
+    vertical-align: 0.12em;
+  }
+  .status.rev::before { background: #c76a2e; }
+  .status.rnr::before { background: #4f8a5b; }
+
   .actions {
     display: flex;
     flex-direction: column;
@@ -530,6 +544,27 @@ body.home {
     display: block;
   }
   .actions a:hover { color: $accent; }
+}
+
+// Light background on hover; drawn by a pseudo-element so the row
+// content and its bottom rule stay put
+@media (hover: hover) {
+  .paper {
+    position: relative;
+    isolation: isolate;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0 -1rem;
+      z-index: -1;
+      background: $bg-2;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity .25s ease;
+    }
+    &:hover::before { opacity: 1; }
+  }
 }
 
 @media (max-width: 768px) {
