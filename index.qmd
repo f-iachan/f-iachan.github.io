@@ -46,8 +46,8 @@ I am an Associate Professor of Economics and Finance at [FGV EPGE](https://epge.
 
 My work covers portfolio choice and asset pricing, labor markets and inequality, monetary policy transmission, credit constraints and investment, coordination in financial markets, and informality in housing and labor markets.
 
-::: {.home-profiles}
-[Google Scholar](https://scholar.google.com/citations?user=V2-MEC0AAAAJ) [ORCID](https://orcid.org/0000-0002-4716-2221) [RePEc](https://ideas.repec.org/e/pia34.html) [Lattes](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4233378D2) [CV (PDF)](cv-pdf.pdf)
+::: {.profile-row}
+[Google Scholar](https://scholar.google.com/citations?user=V2-MEC0AAAAJ){.pi-scholar} [ORCID](https://orcid.org/0000-0002-4716-2221){.pi-orcid} [RePEc](https://ideas.repec.org/e/pia34.html){.pi-repec} [Lattes](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4233378D2){.pi-lattes} [CV (PDF)](cv-pdf.pdf){.pi-cv}
 :::
 :::
 

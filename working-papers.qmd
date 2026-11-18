@@ -1,6 +1,7 @@
 ---
 title: "Working Papers"
 page-layout: article
+body-classes: page-wide
 toc: false
 ---
 

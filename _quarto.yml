@@ -56,9 +56,6 @@ format:
     css: styles.css
     toc: false
     link-external-newwindow: true
-    include-in-header:
-      - text: |
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 publish:
   gh-pages:

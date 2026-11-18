@@ -1,6 +1,7 @@
 ---
 title: "Publications"
 page-layout: article
+body-classes: page-wide
 toc: false
 ---
 
