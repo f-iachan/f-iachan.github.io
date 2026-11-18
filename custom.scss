@@ -1,6 +1,7 @@
 /*-- scss:defaults --*/
 
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=gambetta@400,500&display=swap');
 
 // Warm-shifted palette (cream + warm greys)
 $bg:          #f4f2ea;
@@ -27,6 +28,7 @@ $navbar-bg:      rgba(244, 242, 234, 0.85);
 $font-family-sans-serif: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 $font-family-monospace:  'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 $headings-font-family:   $font-family-sans-serif;
+$font-serif:             'Gambetta', Georgia, 'Times New Roman', serif;
 $font-size-base:         0.9375rem;       // 15px
 $line-height-base:       1.55;
 
@@ -218,102 +220,210 @@ h3 {
 }
 
 // ---- home hero -----------------------------------------------
-// The page fills the viewport: name, text and portrait share one centered
-// block aligned with the navbar edges, and the footer sits at the bottom.
+// Kicker and serif name beside a small portrait; under them a drawing
+// animates once: two Gaussian components sharpen into Sugarloaf and Urca.
 body.home {
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
+  // The name is the page's headline, so the navbar doesn't repeat it
+  .navbar-brand { visibility: hidden; }
+  // The hero below carries the name; hide Quarto's own title block
+  #title-block-header { display: none; }
 
-  #quarto-content {
-    display: flex;
-    flex: 1 0 auto;
-    width: 100%;
-    justify-content: center;
-    padding: 2.5rem 0;
-  }
-
-  // Quarto places the title outside .home-intro, so main holds the grid
+  // Wider than the default article column, aligned with the navbar edges
+  #quarto-content { display: flex; justify-content: center; }
   main.content {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) clamp(240px, 30vw, 360px);
-    grid-template-rows: 1fr auto auto 1fr;
-    column-gap: clamp(3rem, 7vw, 6.5rem);
     width: min(1018px, 100% - 3rem);
     max-width: none;
     margin: 0;
-    padding: 0;
+    padding: clamp(2.5rem, 6vw, 5rem) 0 2rem;
   }
-
-  #title-block-header {
-    grid-column: 1;
-    grid-row: 2;
-    margin: 0 0 1.5rem;
-    padding: 0;
-  }
-
-  h1.title {
-    margin: 0;
-    font-size: clamp(40px, 4.5vw, 56px);
-  }
-
-  .nav-footer { margin-top: 0; padding-top: 1rem; padding-bottom: 1rem; }
-
-  // The name is the page's headline, so the navbar doesn't repeat it
-  .navbar-brand { visibility: hidden; }
 }
 
-.home-intro { display: contents; }
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  grid-template-rows: auto auto;
+  column-gap: 4rem;
+  margin-top: 1.5rem;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid $rule-strong;
 
-.home-intro .home-text {
-  grid-column: 1;
-  grid-row: 3;
-
-  p {
-    font-size: 17px;
-    line-height: 1.6;
-    color: $ink-2;
-    max-width: 60ch;
-    margin: 0 0 1.1rem;
-  }
-
-  p:last-child { margin-bottom: 0; }
+  // Name above the sketch; the portrait spans both rows and its bottom
+  // edge sits on the same line as the water
+  .home-hero-text  { grid-column: 1; grid-row: 1; align-self: end; margin-bottom: 1.25rem; }
+  .rio-sketch      { grid-column: 1; grid-row: 2; }
+  .home-hero-photo { grid-column: 2; grid-row: 1 / 3; align-self: end; }
+  .home-hero-photo p { margin: 0; }
 }
 
-.home-intro .home-photo {
-  grid-column: 2;
-  grid-row: 1 / -1;
-  align-self: center;
+.home-kicker p {
+  font: 500 11.5px/1.4 $font-family-monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $ink-4;
+  margin: 0 0 1.25rem;
+}
 
-  p { margin: 0; }
+body.home h1.home-name {
+  font-family: $font-serif;
+  font-weight: 400;
+  font-size: clamp(36px, 4.4vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: $ink;
+  margin: 0;
 }
 
 .profile-photo {
   display: block;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: none;
-  filter: grayscale(0.08) contrast(0.98);
+  filter: grayscale(0.15);
+}
+
+// The drawing: thin navy strokes; lines draw in, shapes fade in, and
+// SVG <animate> handles the curves-to-mountains morph and the cable car.
+.rio-sketch {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1000 / 150;
+  overflow: visible;
+  pointer-events: none;
+
+  path { fill: none; stroke: $accent; stroke-width: 1.2; stroke-opacity: 0.55; vector-effect: non-scaling-stroke; }
+  .area { fill: $accent; fill-opacity: 0.07; stroke: none; }
+  .water { stroke-opacity: 0.32; }
+  .faint { stroke-opacity: 0.22; }
+  .bldg { fill: #ebe8e0; stroke-opacity: 0.45; }
+  .bldg.side { fill: #dfdcd3; }
+  .cable { stroke-opacity: 0.35; stroke-width: 0.8; }
+  .gondola rect { fill: $accent; fill-opacity: 0.7; stroke: none; }
+
+  // Don't put .pop/.draw on an element that also has an SVG <animate>
+  // fade: the two clash (see _prototypes/README.md)
+  .draw { stroke-dasharray: 1000; animation: rio-draw 2.6s cubic-bezier(.4, 0, .2, 1) .3s backwards; }
+  .pop  { animation: rio-pop .8s ease backwards; }
+}
+
+@keyframes rio-draw { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+@keyframes rio-pop  { from { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rio-sketch * { animation: none !important; }
+}
+
+// Bio on the left, current working papers on the right
+.home-cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 4rem;
+  padding-top: 2.5rem;
+}
+
+.home-about p {
+  font-size: 15.5px;
+  color: $ink-2;
+  margin: 0 0 1rem;
+}
+
+.home-about .home-lede p {
+  font: 400 21px/1.45 $font-serif;
+  color: $ink;
+  margin: 0 0 1.25rem;
+}
+
+.home-profiles p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin-top: 1.5rem;
+  font-size: 13.5px;
+}
+
+.home-label p {
+  font: 500 11.5px/1.4 $font-family-monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $ink-4;
+  margin: 0 0 1rem;
+}
+
+.home-papers {
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: wp;
+  }
+
+  li {
+    counter-increment: wp;
+    position: relative;
+    padding: 0.9rem 0 0.9rem 2.2rem;
+    border-top: 1px solid $rule;
+  }
+  li:last-child { border-bottom: 1px solid $rule; }
+
+  li::before {
+    content: counter(wp, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 1.05rem;
+    font: 400 12px $font-family-monospace;
+    color: $ink-4;
+  }
+
+  li > a {
+    font: 400 17px/1.35 $font-serif;
+    color: $ink;
+    background-image: none;
+  }
+  li > a:hover { color: $accent; }
+
+  // Same dot colours as the working papers page
+  .status {
+    display: block;
+    margin-top: 4px;
+    font-size: 12.5px;
+    color: $ink-3;
+  }
+  .status::before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: $ink-4;
+    vertical-align: 0.05em;
+  }
+  .status.rev::before  { background: #c76a2e; }
+  .status.rnr::before  { background: #4f8a5b; }
+  .status.cond::before { background: #3b6ea8; }
+
+  .home-more {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 13.5px;
+    color: $ink-3;
+  }
 }
 
 @media (max-width: 768px) {
-  body.home #quarto-content { padding: 1.5rem 0 2.5rem; }
-  body.home main.content {
+  .home-hero {
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto auto auto;
-    align-content: start;
-  }
-  body.home #title-block-header { margin-bottom: 1rem; }
-  body.home h1.title { font-size: clamp(28px, 8vw, 40px); }
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
-  .home-intro .home-photo {
-    grid-column: 1;
-    grid-row: 1;
-    margin-bottom: 1.5rem;
+    .home-hero-photo { grid-column: 1; grid-row: 1; margin-bottom: 1.75rem; }
+    .home-hero-text  { grid-row: 2; }
+    .rio-sketch      { grid-row: 3; }
   }
-  .home-intro .home-text p { font-size: 16px; }
-  .home-intro .profile-photo { width: 160px; }
+  .home-hero-photo .profile-photo { width: 150px; }
+  body.home h1.home-name { font-size: 38px; }
+  .home-cols { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
 }
 
 // ---- page head (publications, working papers) ---------------
@@ -511,7 +621,8 @@ body.home {
     color: inherit;
   }
 
-  // Colored dot before the status: amber = revision requested, green = R&R
+  // Colored dot before the status: amber = revision requested, green = R&R,
+  // blue = conditionally accepted
   .status::before {
     content: '';
     display: inline-block;
@@ -524,6 +635,7 @@ body.home {
   }
   .status.rev::before { background: #c76a2e; }
   .status.rnr::before { background: #4f8a5b; }
+  .status.cond::before { background: #3b6ea8; }
 
   .actions {
     display: flex;

@@ -27,7 +27,7 @@ toc: false
 
 ## Status
 
-**Revised and Resubmitted**, *Critical Finance Review*
+**Conditionally Accepted**, *Critical Finance Review*
 
 Previously circulated as "Subjective beliefs, disagreement, and market return predictability."
 

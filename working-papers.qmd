@@ -18,7 +18,7 @@ toc: false
 :::{.paper-body}
 "Analyst expectations provide no incremental return predictability beyond valuation", joint with [Raul Riva](https://rgriva.github.io).
 
-[*Revised and resubmitted, Critical Finance Review*]{.status .rnr}
+[*Conditionally accepted, Critical Finance Review*]{.status .cond}
 :::
 :::{.actions}
 [Page](papers/ibes-market-returns.qmd)
